@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -126,7 +126,6 @@
 				};
 			};
 			buildConfigurationList = 3E9F18462C3C3E6200766004 /* Build configuration list for PBXProject "FirstTeamApp" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -134,6 +133,7 @@
 				Base,
 			);
 			mainGroup = 3E9F18422C3C3E6200766004;
+			preferredProjectObjectVersion = 73;
 			productRefGroup = 3E9F184C2C3C3E6200766004 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
