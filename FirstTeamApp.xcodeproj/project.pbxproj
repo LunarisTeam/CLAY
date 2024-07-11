@@ -10,7 +10,7 @@
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
 		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
 		3E9F18552C3C3E6200766004 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18542C3C3E6200766004 /* ContentView.swift */; };
-		3E9F18572C3C3E6200766004 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18562C3C3E6200766004 /* ImmersiveView.swift */; };
+		3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18562C3C3E6200766004 /* DrawingView.swift */; };
 		3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		3E9F184F2C3C3E6200766004 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
 		3E9F18542C3C3E6200766004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3E9F18562C3C3E6200766004 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		3E9F18562C3C3E6200766004 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
 				3E9F18542C3C3E6200766004 /* ContentView.swift */,
-				3E9F18562C3C3E6200766004 /* ImmersiveView.swift */,
+				3E9F18562C3C3E6200766004 /* DrawingView.swift */,
 				3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */,
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
@@ -163,7 +163,7 @@
 			files = (
 				3E9F18552C3C3E6200766004 /* ContentView.swift in Sources */,
 				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
-				3E9F18572C3C3E6200766004 /* ImmersiveView.swift in Sources */,
+				3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,17 +301,19 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dave.CarloTest2.FirstTeamApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dave.FirstTeamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -327,17 +329,19 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Dave.CarloTest2.FirstTeamApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dave.FirstTeamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
