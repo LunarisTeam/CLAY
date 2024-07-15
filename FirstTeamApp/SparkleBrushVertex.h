@@ -1,17 +1,14 @@
 //
-//  MetalShader.metal
+//  SparkleBrushVertex.h
 //  FirstTeamApp
 //
-//  Created by Davide Castaldi on 11/07/24.
+//  Created by Davide Castaldi on 15/07/24.
 //
 
-#include <metal_stdlib>
+#ifndef SparkleBrushVertex_h
+#define SparkleBrushVertex_h
+
 #include "MetalPacking.h"
-#include <simd/simd.h>
-
-using namespace metal;
-
-//MARK: This is probably useless at the moment...?
 
 /// This is the attribute for every brush
 struct SparkleBrushAttribute {
@@ -22,12 +19,12 @@ struct SparkleBrushAttribute {
 };
 
 /// Describes a particle in the simulation
-struct SparkBrushParticle {
+struct SparkleBrushParticle {
     struct SparkleBrushAttribute attributes;
     packed_float3 velocity;
 };
 
-/// one quad (4 vertices) is created per particle
+/// One quad (4 vertices) is created per particle
 struct SparkleBrushVertex {
     struct SparkleBrushAttribute attributes;
     simd_half2 uv;
@@ -39,3 +36,5 @@ struct SparkleBrushSimulationParams {
     float deltaTime;
     float dragCoefficient;
 };
+
+#endif /* SparkleBrushVertex_h */
