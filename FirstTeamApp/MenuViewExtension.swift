@@ -1,8 +1,8 @@
 //
-//  ContentViewExtension.swift
+//  MenuViewExtension.swift
 //  FirstTeamApp
 //
-//  Created by Davide Castaldi on 12/07/24.
+//  Created by Alessandro Ricci on 15/07/24.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import RealityFoundation
 import UIKit
 import SwiftUI
 
-extension ContentView {
+extension MenuView {
     
     /// creates the menu text and centers it (fun fact i had to this from scratch before VisionOS 2.0)
     private func createMenuText() async {
@@ -71,21 +71,21 @@ extension ContentView {
     
     /// Populates the mesh through MTLComputeCommandEncoder. RealityKit automatically updates these changes
 //    private func lowLevelTextureCompute() {
-//        
+//
 //        let lowLevelTexture: LowLevelTexture
-//        
+//
 //        let commandBuffer: MTLCommandBuffer
 //        let encoder: MTLComputeCommandEncoder
 //        let computePipeline: MTLComputePipelineState
-//        
+//
 //        commandBuffer.enqueue()
 //        encoder.setComputePipelineState(computePipeline)
 //
 //        let writeTexture: MTLTexture = lowLevelTexture.replace(using: commandBuffer)
 //        encoder.setTexture(writeTexture, index: 0)
-//       
+//
 //        encoder.dispatchThreadgroups(<#T##threadgroupsPerGrid: MTLSize##MTLSize#>, threadsPerThreadgroup: <#T##MTLSize#>)
-//        
+//
 //        encoder.endEncoding()
 //        commandBuffer.commit()
 //    }

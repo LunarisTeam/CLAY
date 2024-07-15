@@ -1,15 +1,15 @@
 //
-//  ContentView.swift
+//  MenuView.swift
 //  FirstTeamApp
 //
-//  Created by Davide Castaldi on 08/07/24.
+//  Created by Alessandro Ricci on 15/07/24.
 //
 
 import SwiftUI
 import RealityKit
 import RealityKitContent
 
-struct ContentView: View {
+struct MenuView: View {
         
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
@@ -45,5 +45,5 @@ struct ContentView: View {
 }
 
 #Preview(windowStyle: .automatic) {
-    ContentView()
+    MenuView()
 }

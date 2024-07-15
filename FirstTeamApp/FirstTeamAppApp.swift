@@ -15,7 +15,7 @@ struct FirstTeamAppApp: App {
         
         //builds scenes. We need to give the id for the views, because we have to open and dismiss manually
         WindowGroup(id: "main") {
-            ContentView()
+            MenuView()
         }
         //builds immersive spaces, same concept as before
         ImmersiveSpace(id: "DrawingView") {
@@ -23,3 +23,4 @@ struct FirstTeamAppApp: App {
         }
     }
 }
+
