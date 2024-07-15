@@ -20,22 +20,6 @@ struct SolidBrushVertex {
     var materialProperties: SIMD2<Float>
 }
 
-///This is used to create the LowLevelMesh Descriptor used for the brush
-extension SolidBrushVertex {
-    static var vertexAttributes: [LowLevelMesh.Attribute] {
-        typealias Attribute = LowLevelMesh.Attribute
-        return [
-            Attribute(semantic: .position, format: MTLVertexFormat.float3, layoutIndex: 0, offset: MemoryLayout.offset(of: \Self.position)!),
-            Attribute(semantic: .normal, format: MTLVertexFormat.float3, layoutIndex: 0, offset: MemoryLayout.offset(of: \Self.normal)!),
-            Attribute(semantic: .bitangent, format: MTLVertexFormat.float3, layoutIndex: 0, offset: MemoryLayout.offset(of: \Self.bitangent)!),
-            Attribute(semantic: .color, format: MTLVertexFormat.half3, layoutIndex: 0, offset: MemoryLayout.offset(of: \Self.color)!),
-            Attribute(semantic: .uv1, format: MTLVertexFormat.float, layoutIndex: 0, offset: MemoryLayout.offset(of: \Self.curvedDistance)!),
-            Attribute(semantic: .uv3, format: MTLVertexFormat.float2, layoutIndex: 0, offset: MemoryLayout.offset(of: \Self.materialProperties)!),
-            
-        ]
-    }
-}
-
 struct SparkleBrushAttribute {
     var position: SIMD3<Float>
     var normal: SIMD3<Float>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E1ECFC52C413FCA00BB6761 /* ContentViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1ECFC42C413FCA00BB6761 /* ContentViewExtension.swift */; };
+		3E746C352C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C342C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift */; };
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
 		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
 		3E9F18552C3C3E6200766004 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18542C3C3E6200766004 /* ContentView.swift */; };
@@ -16,11 +17,14 @@
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
 		3EFB6E4D2C4069F8001452EC /* DrawingViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB6E4C2C4069F8001452EC /* DrawingViewExtension.swift */; };
-		3EFB6E4F2C406A52001452EC /* MetalShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB6E4E2C406A52001452EC /* MetalShader.metal */; };
+		3EFB6E4F2C406A52001452EC /* SparkleBrushVertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB6E4E2C406A52001452EC /* SparkleBrushVertex.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E1ECFC42C413FCA00BB6761 /* ContentViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtension.swift; sourceTree = "<group>"; };
+		3E746C342C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleBrushVertex+LowLevelMesh.swift"; sourceTree = "<group>"; };
+		3E746C362C4509BC0047EAFB /* MetalPacking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalPacking.h; sourceTree = "<group>"; };
+		3E746C372C450D300047EAFB /* SolidBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolidBrushVertex.h; sourceTree = "<group>"; };
 		3E9F184B2C3C3E6200766004 /* FirstTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9F184F2C3C3E6200766004 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EFB6E4C2C4069F8001452EC /* DrawingViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewExtension.swift; sourceTree = "<group>"; };
-		3EFB6E4E2C406A52001452EC /* MetalShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalShader.metal; sourceTree = "<group>"; };
+		3EFB6E4E2C406A52001452EC /* SparkleBrushVertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SparkleBrushVertex.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,10 @@
 				3E1ECFC42C413FCA00BB6761 /* ContentViewExtension.swift */,
 				3E9F18562C3C3E6200766004 /* DrawingView.swift */,
 				3EFB6E4C2C4069F8001452EC /* DrawingViewExtension.swift */,
-				3EFB6E4E2C406A52001452EC /* MetalShader.metal */,
+				3EFB6E4E2C406A52001452EC /* SparkleBrushVertex.metal */,
+				3E746C362C4509BC0047EAFB /* MetalPacking.h */,
+				3E746C372C450D300047EAFB /* SolidBrushVertex.h */,
+				3E746C342C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift */,
 				3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */,
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
@@ -171,9 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1ECFC52C413FCA00BB6761 /* ContentViewExtension.swift in Sources */,
+				3E746C352C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift in Sources */,
 				3E9F18552C3C3E6200766004 /* ContentView.swift in Sources */,
 				3EFB6E4D2C4069F8001452EC /* DrawingViewExtension.swift in Sources */,
-				3EFB6E4F2C406A52001452EC /* MetalShader.metal in Sources */,
+				3EFB6E4F2C406A52001452EC /* SparkleBrushVertex.metal in Sources */,
 				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
 				3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */,
 			);

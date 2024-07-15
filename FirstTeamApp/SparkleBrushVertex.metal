@@ -6,19 +6,14 @@
 //
 
 #include <metal_stdlib>
+#include "MetalPacking.h"
+#include <simd/simd.h>
+
 using namespace metal;
 
 //MARK: This is probably useless at the moment...?
-/// A mesh is a collection of vetices. A vertex is composed by these parameters. Every vertex follows the next one to create the shader effect
-struct SolidBrushVertex {
-    packed_float3 position;
-    packed_float3 normal;
-    packed_float3 bitangent;
-    packed_float2 materialProperties;
-    float curvedDistance;
-    packed_half3 color;
-};
 
+/// This is the attribute for every brush
 struct SparkleBrushAttribute {
     packed_float3 position;
     packed_float3 normal;
@@ -33,7 +28,14 @@ struct SparkBrushParticle {
 };
 
 /// one quad (4 vertices) is created per particle
-struct Spark {
+struct SparkleBrushVertex {
     struct SparkleBrushAttribute attributes;
     simd_half2 uv;
+};
+
+/// This is to simulate the movement of the brush
+struct SparkleBrushSimulationParams {
+    uint32_t particleCount;
+    float deltaTime;
+    float dragCoefficient;
 };
