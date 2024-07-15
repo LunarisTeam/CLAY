@@ -7,32 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E746C352C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C342C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift */; };
-		3E746C3B2C4536340047EAFB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C392C4536340047EAFB /* MenuView.swift */; };
-		3E746C3C2C4536340047EAFB /* MenuViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C3A2C4536340047EAFB /* MenuViewExtension.swift */; };
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
 		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
 		3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18562C3C3E6200766004 /* DrawingView.swift */; };
 		3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
-		3EFB6E4D2C4069F8001452EC /* DrawingViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB6E4C2C4069F8001452EC /* DrawingViewExtension.swift */; };
-		3EFB6E4F2C406A52001452EC /* SparkleBrushSimulation.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB6E4E2C406A52001452EC /* SparkleBrushSimulation.metal */; };
 		E3CAFFE32C453864000624DE /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE12C453864000624DE /* Math.swift */; };
 		E3CAFFE62C45386F000624DE /* SolidBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE42C45386F000624DE /* SolidBrush.swift */; };
 		E3CAFFEA2C453880000624DE /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE82C453880000624DE /* PaletteView.swift */; };
 		E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE72C453880000624DE /* DashboardView.swift */; };
 		E3CAFFEE2C454406000624DE /* BrushPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFED2C454406000624DE /* BrushPreset.swift */; };
 		E3CAFFF02C454541000624DE /* SparkleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFEF2C45453C000624DE /* SparkleBrush.swift */; };
+		E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */; };
+		E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */; };
+		E3CAFFFD2C45555C000624DE /* DrawingViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFFC2C455555000624DE /* DrawingViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E746C342C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleBrushVertex+LowLevelMesh.swift"; sourceTree = "<group>"; };
-		3E746C362C4509BC0047EAFB /* MetalPacking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalPacking.h; sourceTree = "<group>"; };
-		3E746C372C450D300047EAFB /* SolidBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolidBrushVertex.h; sourceTree = "<group>"; };
-		3E746C382C450F4E0047EAFB /* SparkleBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkleBrushVertex.h; sourceTree = "<group>"; };
-		3E746C392C4536340047EAFB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		3E746C3A2C4536340047EAFB /* MenuViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewExtension.swift; sourceTree = "<group>"; };
 		3E9F184B2C3C3E6200766004 /* FirstTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9F184F2C3C3E6200766004 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
@@ -41,14 +33,18 @@
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EFB6E4C2C4069F8001452EC /* DrawingViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewExtension.swift; sourceTree = "<group>"; };
-		3EFB6E4E2C406A52001452EC /* SparkleBrushSimulation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SparkleBrushSimulation.metal; sourceTree = "<group>"; };
 		E3CAFFE12C453864000624DE /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		E3CAFFE42C45386F000624DE /* SolidBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrush.swift; sourceTree = "<group>"; };
 		E3CAFFE72C453880000624DE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E3CAFFE82C453880000624DE /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 		E3CAFFED2C454406000624DE /* BrushPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushPreset.swift; sourceTree = "<group>"; };
 		E3CAFFEF2C45453C000624DE /* SparkleBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleBrush.swift; sourceTree = "<group>"; };
+		E3CAFFF42C4554AA000624DE /* MetalPacking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalPacking.h; sourceTree = "<group>"; };
+		E3CAFFF52C4554AA000624DE /* SolidBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolidBrushVertex.h; sourceTree = "<group>"; };
+		E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SparkleBrushSimulation.metal; sourceTree = "<group>"; };
+		E3CAFFF72C4554AA000624DE /* SparkleBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkleBrushVertex.h; sourceTree = "<group>"; };
+		E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleBrushVertex+LowLevelMesh.swift"; sourceTree = "<group>"; };
+		E3CAFFFC2C455555000624DE /* DrawingViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,19 +79,11 @@
 		3E9F184D2C3C3E6200766004 /* FirstTeamApp */ = {
 			isa = PBXGroup;
 			children = (
+				E3CAFFF92C4554AA000624DE /* BrushBackend */,
 				E3CAFFE92C453880000624DE /* UserInterface */,
 				E3CAFFE52C45386F000624DE /* Configuration */,
 				E3CAFFE22C453864000624DE /* Utility */,
 				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
-				3E746C392C4536340047EAFB /* MenuView.swift */,
-				3E746C3A2C4536340047EAFB /* MenuViewExtension.swift */,
-				3E9F18562C3C3E6200766004 /* DrawingView.swift */,
-				3EFB6E4C2C4069F8001452EC /* DrawingViewExtension.swift */,
-				3EFB6E4E2C406A52001452EC /* SparkleBrushSimulation.metal */,
-				3E746C362C4509BC0047EAFB /* MetalPacking.h */,
-				3E746C372C450D300047EAFB /* SolidBrushVertex.h */,
-				3E746C342C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift */,
-				3E746C382C450F4E0047EAFB /* SparkleBrushVertex.h */,
 				3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */,
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
@@ -142,6 +130,8 @@
 			children = (
 				E3CAFFEC2C4543FE000624DE /* Palette */,
 				E3CAFFE72C453880000624DE /* DashboardView.swift */,
+				3E9F18562C3C3E6200766004 /* DrawingView.swift */,
+				E3CAFFFC2C455555000624DE /* DrawingViewExtension.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -153,6 +143,18 @@
 				E3CAFFE82C453880000624DE /* PaletteView.swift */,
 			);
 			path = Palette;
+			sourceTree = "<group>";
+		};
+		E3CAFFF92C4554AA000624DE /* BrushBackend */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAFFF42C4554AA000624DE /* MetalPacking.h */,
+				E3CAFFF52C4554AA000624DE /* SolidBrushVertex.h */,
+				E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */,
+				E3CAFFF72C4554AA000624DE /* SparkleBrushVertex.h */,
+				E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */,
+			);
+			path = BrushBackend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,17 +231,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E746C352C4507B50047EAFB /* SparkleBrushVertex+LowLevelMesh.swift in Sources */,
 				E3CAFFE62C45386F000624DE /* SolidBrush.swift in Sources */,
-				3EFB6E4D2C4069F8001452EC /* DrawingViewExtension.swift in Sources */,
+				E3CAFFFD2C45555C000624DE /* DrawingViewExtension.swift in Sources */,
 				E3CAFFEE2C454406000624DE /* BrushPreset.swift in Sources */,
 				E3CAFFEA2C453880000624DE /* PaletteView.swift in Sources */,
 				E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */,
-				3EFB6E4F2C406A52001452EC /* SparkleBrushSimulation.metal in Sources */,
 				E3CAFFF02C454541000624DE /* SparkleBrush.swift in Sources */,
 				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
-				3E746C3B2C4536340047EAFB /* MenuView.swift in Sources */,
-				3E746C3C2C4536340047EAFB /* MenuViewExtension.swift in Sources */,
+				E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */,
+				E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */,
 				3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */,
 				E3CAFFE32C453864000624DE /* Math.swift in Sources */,
 			);
