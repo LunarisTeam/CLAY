@@ -11,14 +11,14 @@ import RealityKit
 import RealityKitContent
 
 /// The parameters used for the brush
-struct SolidBrushVertex {
-    var position: SIMD3<Float>
-    var normal: SIMD3<Float>
-    var bitangent: SIMD3<Float>
-    var color: SIMD3<UInt16>
-    var curvedDistance: Float
-    var materialProperties: SIMD2<Float>
-}
+//struct SolidBrushVertex {
+//    var position: SIMD3<Float>
+//    var normal: SIMD3<Float>
+//    var bitangent: SIMD3<Float>
+//    var color: SIMD3<UInt16>
+//    var curvedDistance: Float
+//    var materialProperties: SIMD2<Float>
+//}
 
 struct SparkleBrushAttribute {
     var position: SIMD3<Float>

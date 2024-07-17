@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */; };
+		3E746C502C465F490047EAFB /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C4F2C465F490047EAFB /* BitCollections */; };
+		3E746C522C465F490047EAFB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C512C465F490047EAFB /* Collections */; };
+		3E746C542C465F490047EAFB /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C532C465F490047EAFB /* DequeModule */; };
+		3E746C562C465F490047EAFB /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C552C465F490047EAFB /* HashTreeCollections */; };
+		3E746C582C465F490047EAFB /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C572C465F490047EAFB /* HeapModule */; };
+		3E746C5A2C4660230047EAFB /* MetalUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C592C4660230047EAFB /* MetalUtilities.swift */; };
+		3E746C5D2C46660C0047EAFB /* SolidBrushCurvePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */; };
+		3E746C602C466B5A0047EAFB /* CurveSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C5F2C466B5A0047EAFB /* CurveSample.swift */; };
+		3E746C622C466F860047EAFB /* SmoothCurveSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C612C466F860047EAFB /* SmoothCurveSampler.swift */; };
+		3E746C642C46705F0047EAFB /* SolidBrushStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C632C46705F0047EAFB /* SolidBrushStyleProvider.swift */; };
+		3E8DBC9F2C47AEB100C54F1A /* SparkleBrushComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBC9E2C47AEB100C54F1A /* SparkleBrushComponent.swift */; };
+		3E8DBCA32C47B14E00C54F1A /* SparkleBrushCurvePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCA22C47B14E00C54F1A /* SparkleBrushCurvePoint.swift */; };
+		3E8DBCA52C47B1A300C54F1A /* SparkleBrushStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCA42C47B1A300C54F1A /* SparkleBrushStyleProvider.swift */; };
+		3E8DBCA72C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCA62C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift */; };
+		3E8DBCAB2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCAA2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift */; };
+		3E8DBCAD2C47B51600C54F1A /* SolidBrushComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCAC2C47B51600C54F1A /* SolidBrushComponent.swift */; };
+		3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCAE2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift */; };
+		3E8DBCB12C47B54C00C54F1A /* CurveExtruder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */; };
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
 		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
 		3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18562C3C3E6200766004 /* DrawingView.swift */; };
@@ -25,6 +44,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleDrawingMeshGenerator.swift; sourceTree = "<group>"; };
+		3E746C592C4660230047EAFB /* MetalUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUtilities.swift; sourceTree = "<group>"; };
+		3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushCurvePoint.swift; sourceTree = "<group>"; };
+		3E746C5F2C466B5A0047EAFB /* CurveSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveSample.swift; sourceTree = "<group>"; };
+		3E746C612C466F860047EAFB /* SmoothCurveSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothCurveSampler.swift; sourceTree = "<group>"; };
+		3E746C632C46705F0047EAFB /* SolidBrushStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushStyleProvider.swift; sourceTree = "<group>"; };
+		3E8DBC9E2C47AEB100C54F1A /* SparkleBrushComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleBrushComponent.swift; sourceTree = "<group>"; };
+		3E8DBCA22C47B14E00C54F1A /* SparkleBrushCurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleBrushCurvePoint.swift; sourceTree = "<group>"; };
+		3E8DBCA42C47B1A300C54F1A /* SparkleBrushStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleBrushStyleProvider.swift; sourceTree = "<group>"; };
+		3E8DBCA62C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleDrawingMeshGenerator+LowLevelMesh.swift"; sourceTree = "<group>"; };
+		3E8DBCAA2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleDrawingMeshGenerator+Simulation.swift"; sourceTree = "<group>"; };
+		3E8DBCAC2C47B51600C54F1A /* SolidBrushComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushComponent.swift; sourceTree = "<group>"; };
+		3E8DBCAE2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidDrawingMeshGenerator.swift; sourceTree = "<group>"; };
+		3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveExtruder.swift; sourceTree = "<group>"; };
+		3E8DBCB22C47BA7400C54F1A /* MetalBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalBridgeHeader.h; sourceTree = "<group>"; };
 		3E9F184B2C3C3E6200766004 /* FirstTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9F184F2C3C3E6200766004 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
@@ -52,6 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E746C562C465F490047EAFB /* HashTreeCollections in Frameworks */,
+				3E746C522C465F490047EAFB /* Collections in Frameworks */,
+				3E746C542C465F490047EAFB /* DequeModule in Frameworks */,
+				3E746C502C465F490047EAFB /* BitCollections in Frameworks */,
+				3E746C582C465F490047EAFB /* HeapModule in Frameworks */,
 				3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +98,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E746C4B2C465EBF0047EAFB /* DrawingGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */,
+				3E8DBCA62C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift */,
+				3E8DBCAA2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift */,
+				3E8DBCA22C47B14E00C54F1A /* SparkleBrushCurvePoint.swift */,
+				3E8DBCA42C47B1A300C54F1A /* SparkleBrushStyleProvider.swift */,
+				3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */,
+				3E8DBCAC2C47B51600C54F1A /* SolidBrushComponent.swift */,
+				3E8DBCAE2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift */,
+				3E8DBC9E2C47AEB100C54F1A /* SparkleBrushComponent.swift */,
+				3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */,
+				3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */,
+				3E746C632C46705F0047EAFB /* SolidBrushStyleProvider.swift */,
+			);
+			path = DrawingGeneration;
+			sourceTree = "<group>";
+		};
+		3E746C5B2C4665F10047EAFB /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAFFF42C4554AA000624DE /* MetalPacking.h */,
+				3E8DBCB22C47BA7400C54F1A /* MetalBridgeHeader.h */,
+				E3CAFFF52C4554AA000624DE /* SolidBrushVertex.h */,
+				E3CAFFF72C4554AA000624DE /* SparkleBrushVertex.h */,
+				E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		3E746C5E2C466B300047EAFB /* ImageCurveProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C5F2C466B5A0047EAFB /* CurveSample.swift */,
+				3E746C612C466F860047EAFB /* SmoothCurveSampler.swift */,
+			);
+			path = ImageCurveProcessing;
+			sourceTree = "<group>";
+		};
 		3E9F18422C3C3E6200766004 = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +158,11 @@
 		3E9F184D2C3C3E6200766004 /* FirstTeamApp */ = {
 			isa = PBXGroup;
 			children = (
-				E3CAFFF92C4554AA000624DE /* BrushBackend */,
+				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
+				E3CAFFF92C4554AA000624DE /* Brush */,
 				E3CAFFE92C453880000624DE /* UserInterface */,
 				E3CAFFE52C45386F000624DE /* Configuration */,
 				E3CAFFE22C453864000624DE /* Utility */,
-				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
 				3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */,
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
@@ -111,6 +190,7 @@
 		E3CAFFE22C453864000624DE /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				3E746C592C4660230047EAFB /* MetalUtilities.swift */,
 				E3CAFFE12C453864000624DE /* Math.swift */,
 			);
 			path = Utility;
@@ -145,16 +225,14 @@
 			path = Palette;
 			sourceTree = "<group>";
 		};
-		E3CAFFF92C4554AA000624DE /* BrushBackend */ = {
+		E3CAFFF92C4554AA000624DE /* Brush */ = {
 			isa = PBXGroup;
 			children = (
-				E3CAFFF42C4554AA000624DE /* MetalPacking.h */,
-				E3CAFFF52C4554AA000624DE /* SolidBrushVertex.h */,
-				E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */,
-				E3CAFFF72C4554AA000624DE /* SparkleBrushVertex.h */,
-				E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */,
+				3E746C5B2C4665F10047EAFB /* SupportFiles */,
+				3E746C5E2C466B300047EAFB /* ImageCurveProcessing */,
+				3E746C4B2C465EBF0047EAFB /* DrawingGeneration */,
 			);
-			path = BrushBackend;
+			path = Brush;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +253,11 @@
 			name = FirstTeamApp;
 			packageProductDependencies = (
 				3E9F18502C3C3E6200766004 /* RealityKitContent */,
+				3E746C4F2C465F490047EAFB /* BitCollections */,
+				3E746C512C465F490047EAFB /* Collections */,
+				3E746C532C465F490047EAFB /* DequeModule */,
+				3E746C552C465F490047EAFB /* HashTreeCollections */,
+				3E746C572C465F490047EAFB /* HeapModule */,
 			);
 			productName = FirstTeamApp;
 			productReference = 3E9F184B2C3C3E6200766004 /* FirstTeamApp.app */;
@@ -203,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 3E9F18422C3C3E6200766004;
+			packageReferences = (
+				3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			preferredProjectObjectVersion = 73;
 			productRefGroup = 3E9F184C2C3C3E6200766004 /* Products */;
 			projectDirPath = "";
@@ -231,16 +317,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8DBCAD2C47B51600C54F1A /* SolidBrushComponent.swift in Sources */,
 				E3CAFFE62C45386F000624DE /* SolidBrush.swift in Sources */,
+				3E746C5A2C4660230047EAFB /* MetalUtilities.swift in Sources */,
 				E3CAFFFD2C45555C000624DE /* DrawingViewExtension.swift in Sources */,
 				E3CAFFEE2C454406000624DE /* BrushPreset.swift in Sources */,
 				E3CAFFEA2C453880000624DE /* PaletteView.swift in Sources */,
+				3E8DBCA32C47B14E00C54F1A /* SparkleBrushCurvePoint.swift in Sources */,
 				E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */,
+				3E746C622C466F860047EAFB /* SmoothCurveSampler.swift in Sources */,
+				3E8DBCA52C47B1A300C54F1A /* SparkleBrushStyleProvider.swift in Sources */,
+				3E8DBC9F2C47AEB100C54F1A /* SparkleBrushComponent.swift in Sources */,
+				3E746C602C466B5A0047EAFB /* CurveSample.swift in Sources */,
 				E3CAFFF02C454541000624DE /* SparkleBrush.swift in Sources */,
+				3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */,
+				3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */,
 				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
+				3E8DBCA72C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift in Sources */,
+				3E746C5D2C46660C0047EAFB /* SolidBrushCurvePoint.swift in Sources */,
+				3E746C642C46705F0047EAFB /* SolidBrushStyleProvider.swift in Sources */,
 				E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */,
 				E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */,
+				3E8DBCAB2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift in Sources */,
 				3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */,
+				3E8DBCB12C47B54C00C54F1A /* CurveExtruder.swift in Sources */,
 				E3CAFFE32C453864000624DE /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +546,43 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3E746C4F2C465F490047EAFB /* BitCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = BitCollections;
+		};
+		3E746C512C465F490047EAFB /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		3E746C532C465F490047EAFB /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		3E746C552C465F490047EAFB /* HashTreeCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HashTreeCollections;
+		};
+		3E746C572C465F490047EAFB /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E746C4E2C465F490047EAFB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
 		3E9F18502C3C3E6200766004 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;

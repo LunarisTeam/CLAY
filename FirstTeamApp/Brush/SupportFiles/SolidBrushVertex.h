@@ -8,6 +8,9 @@
 #ifndef SolidBrushVertex_h
 #define SolidBrushVertex_h
 
+#include "MetalPacking.h"
+#include "Brush/SupportFiles/MetalBridgeHeader.h"
+
 struct SolidBrushVertex {
     packed_float3 position;
     packed_float3 normal;

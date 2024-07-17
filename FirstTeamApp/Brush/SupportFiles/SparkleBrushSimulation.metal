@@ -75,9 +75,17 @@ void sparkleBrushSimulate(device const SparkleBrushParticle *particles [[buffer(
     //3)
     const float newSpeed = max(0.f, speed + dragForce);
     
+    //if the drawing doesn't have at least a certain speed, you can't draw
     if (min(newSpeed, speed) > 0.0001) {
+        //draw with this velocity
         particle.velocity = particle.velocity / (speed * newSpeed);
     } else {
+        //else don't draw
         particle.velocity = 0;
     }
+    //and update the position with the velocity through responsiveness
+    particle.attributes.position += particle.velocity * params.deltaTime;
+    
+    //therefore, the output buffer in that index has the particle
+    output[particleIdx] = particle;
 }

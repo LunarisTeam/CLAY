@@ -9,6 +9,7 @@
 #define SparkleBrushVertex_h
 
 #include "MetalPacking.h"
+#include "Brush/SupportFiles/MetalBridgeHeader.h"
 
 /// This is the attribute for every brush
 struct SparkleBrushAttribute {
