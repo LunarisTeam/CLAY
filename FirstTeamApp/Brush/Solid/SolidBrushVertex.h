@@ -5,12 +5,11 @@
 //  Created by Davide Castaldi on 15/07/24.
 //
 
-#ifndef SolidBrushVertex_h
-#define SolidBrushVertex_h
+#pragma once
 
-#include "MetalPacking.h"
-#include "Brush/SupportFiles/MetalBridgeHeader.h"
+#include "../../Utilities/MetalPacking.h"
 
+#pragma pack(push, 1)
 struct SolidBrushVertex {
     packed_float3 position;
     packed_float3 normal;
@@ -19,5 +18,6 @@ struct SolidBrushVertex {
     float curveDistance;
     packed_half3 color;
 };
+#pragma pack(pop)
 
-#endif /* SolidBrushVertex_h */
+static_assert(sizeof(struct SolidBrushVertex) == 54, "ensure packing");

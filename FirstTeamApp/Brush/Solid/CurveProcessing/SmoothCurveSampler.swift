@@ -7,16 +7,15 @@
 
 import Foundation
 import Collections
+import simd
 
 /// The `SmoothCurveSampler` ingests "Key Points" of a curve and smooths them into a Catmull-Rom spline.
-///
 /// These smoothed curve samples are submitted to a `SolidDrawingMeshGenerator` that you provide.
 public struct SmoothCurveSampler {
     /// The mesh generator to submit smoothed samples to
     private(set) var curve: SolidDrawingMeshGenerator
     
     /// A parameter that determines how closely the generated samples should conform to the ideal smoothed curve.
-    ///
     /// Lower values of flatness will result in more samples but a smoother curve.
     public let flatness: Float
     

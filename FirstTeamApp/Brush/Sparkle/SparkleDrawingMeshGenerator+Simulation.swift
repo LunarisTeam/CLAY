@@ -81,9 +81,11 @@ extension SparkleDrawingMeshGenerator {
             
             // Set `particleCount` to the number of particles being added this batch.
             // Set `deltaTime` and `dragCoefficient` to zero, because you don't yet want to simulate the particles.
-            var currentParameters = SparkleBrushSimulationParams(particleCount: UInt32(length),
-                                                                 deltaTime: 0,
-                                                                 dragCoefficient: 0)
+            var currentParameters = SparkleBrushSimulationParams(
+                particleCount: UInt32(length),
+                deltaTime: 0,
+                dragCoefficient: 0
+            )
             encoder.setBytes(&currentParameters, length: MemoryLayout<SparkleBrushSimulationParams>.size, index: 2)
             
             let numGroups = (length + groupSize - 1) / groupSize

@@ -38,20 +38,20 @@ struct DrawingView: View {
         }
     }
     
-    private func defineMeshResource(for entity: Entity, withMesh mesh: LowLevelMesh) throws {
-        
-        let resource = try? MeshResource(from: mesh)
-        let material = SimpleMaterial()
-        
-        entity.components[ModelComponent.self] = ModelComponent(mesh: resource!, materials: [material])
-        
-        mesh.withUnsafeMutableBytes(bufferIndex: 0) { buffer in
-            let vertices: UnsafeMutableBufferPointer<SolidBrushVertex> = buffer.bindMemory(to: SolidBrushVertex.self)
-        }
-        mesh.withUnsafeMutableIndices { buffer in
-            let indices: UnsafeMutableBufferPointer<UInt32> = buffer.bindMemory(to: UInt32.self)
-        }
-    }
+//    private func defineMeshResource(for entity: Entity, withMesh mesh: LowLevelMesh) throws {
+//        
+//        let resource = try? MeshResource(from: mesh)
+//        let material = SimpleMaterial()
+//        
+//        entity.components[ModelComponent.self] = ModelComponent(mesh: resource!, materials: [material])
+//        
+//        mesh.withUnsafeMutableBytes(bufferIndex: 0) { buffer in
+//            let vertices: UnsafeMutableBufferPointer<SolidBrushVertex> = buffer.bindMemory(to: SolidBrushVertex.self)
+//        }
+//        mesh.withUnsafeMutableIndices { buffer in
+//            let indices: UnsafeMutableBufferPointer<UInt32> = buffer.bindMemory(to: UInt32.self)
+//        }
+//    }
 }
 
 #Preview {

@@ -8,9 +8,8 @@
 #include <metal_stdlib>
 #include "SparkleBrushVertex.h"
 
-//A compute kernel written in metal to simulate the particles in a Sparkle brush stroke,
+//a compute kernel written in metal to simulate the particles in a Sparkle brush stroke,
 //and also to populate the mesh of a sparkle brush with the result of the simulation.
-
 using namespace metal;
 
 //this kernel function populates vertex data for rendering a sparkle brush

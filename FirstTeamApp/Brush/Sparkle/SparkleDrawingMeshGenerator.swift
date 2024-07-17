@@ -132,12 +132,14 @@ final class SparkleDrawingMeshGenerator {
         // Place a hard limit of 2048 particles per frame, to mitigate frame hitches.
         guard particlesToSpawn.count < 2048 else { return }
         
-        let attributes = SparkleBrushAttributes(position: point.position.packed3,
-                                                color: SIMD3<Float16>(point.color).packed3,
-                                                curveDistance: curveDistanceForNextSample,
-                                                size: point.size)
-        particlesToSpawn.append(SparkleBrushParticle(attributes: attributes,
-                                                     velocity: (randomDirection() * point.initialSpeed).packed3))
+        let attributes = SparkleBrushAttributes(
+            position: point.position.packed3,
+            color: SIMD3<Float16>(point.color).packed3,
+            curveDistance: curveDistanceForNextSample,
+            size: point.size
+        )
+        
+        particlesToSpawn.append(SparkleBrushParticle(attributes: attributes, velocity: (randomDirection() * point.initialSpeed).packed3))
     }
     
     /// Reallocates `lowLevelMesh` and `simulationBuffer` to a capacity of at least `newParticleCount`.
