@@ -1,10 +1,10 @@
+////
+////  BrushPreset.swift
+////  FirstTeamApp
+////
+////  Created by Giuseppe Rocco on 15/07/24.
+////
 //
-//  BrushPreset.swift
-//  FirstTeamApp
-//
-//  Created by Giuseppe Rocco on 15/07/24.
-//
-
 //import SwiftUI
 //
 //enum BrushPreset: Equatable {

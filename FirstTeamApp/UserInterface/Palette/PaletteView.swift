@@ -1,10 +1,10 @@
+////
+////  PaletteView.swift
+////  FirstTeamApp
+////
+////  Created by Giuseppe Rocco on 15/07/24.
+////
 //
-//  PaletteView.swift
-//  FirstTeamApp
-//
-//  Created by Giuseppe Rocco on 15/07/24.
-//
-
 //import SwiftUI
 //import RealityKit
 //import RealityKitContent
