@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "BackIcon.png",
       "idiom" : "vision",
       "scale" : "2x"
     }

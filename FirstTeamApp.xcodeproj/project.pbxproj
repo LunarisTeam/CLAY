@@ -14,6 +14,24 @@
 		3E0317C72C47C1AF006D2E16 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3E0317C62C47C1AF006D2E16 /* RealModule */; };
 		3E0317C92C47C496006D2E16 /* CurveExtruderWithEndcaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0317C82C47C496006D2E16 /* CurveExtruderWithEndcaps.swift */; };
 		3E0317CB2C47C86A006D2E16 /* SolidBrushVertex+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0317CA2C47C86A006D2E16 /* SolidBrushVertex+LowLevelMesh.swift */; };
+		3E53BAAE2C4FA11100EC4135 /* DrawingCanvasVisualizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAAD2C4FA11100EC4135 /* DrawingCanvasVisualizationView.swift */; };
+		3E53BAB02C4FA12E00EC4135 /* DrawingCanvasPlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAAF2C4FA12E00EC4135 /* DrawingCanvasPlacementView.swift */; };
+		3E53BAB22C4FA14C00EC4135 /* DrawingCanvasConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAB12C4FA14C00EC4135 /* DrawingCanvasConfigurationView.swift */; };
+		3E53BAB42C4FA16000EC4135 /* DrawingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAB32C4FA16000EC4135 /* DrawingCanvas.swift */; };
+		3E53BAB72C4FA9E100EC4135 /* SplashScreenForeground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAB62C4FA9E100EC4135 /* SplashScreenForeground.swift */; };
+		3E53BAB92C4FAA1900EC4135 /* SplashScreenBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAB82C4FAA1900EC4135 /* SplashScreenBackgroundView.swift */; };
+		3E53BABB2C4FAA3600EC4135 /* SpalshScreenBackgroundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BABA2C4FAA3600EC4135 /* SpalshScreenBackgroundComponent.swift */; };
+		3E53BAC12C4FAA9300EC4135 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC02C4FAA9300EC4135 /* SplashScreenView.swift */; };
+		3E53BAC42C4FAB4F00EC4135 /* DrawingDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC32C4FAB4F00EC4135 /* DrawingDocument.swift */; };
+		3E53BAC62C4FAB6400EC4135 /* DrawingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC52C4FAB6400EC4135 /* DrawingSource.swift */; };
+		3E53BAC82C4FAB7800EC4135 /* AnchorEntityInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC72C4FAB7800EC4135 /* AnchorEntityInputProvider.swift */; };
+		3E53BAD32C4FAC5E00EC4135 /* PresetBrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACB2C4FAC5E00EC4135 /* PresetBrushView.swift */; };
+		3E53BAD42C4FAC5E00EC4135 /* DrawingMeshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */; };
+		3E53BAD52C4FAC5E00EC4135 /* BrushState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD02C4FAC5E00EC4135 /* BrushState.swift */; };
+		3E53BAD62C4FAC5E00EC4135 /* PresetBrushStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACA2C4FAC5E00EC4135 /* PresetBrushStroke.swift */; };
+		3E53BAD72C4FAC5E00EC4135 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */; };
+		3E53BAD82C4FAC5E00EC4135 /* BrushTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */; };
+		3E53BADA2C4FBC6400EC4135 /* SplashScreenBackground.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */; };
 		3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */; };
 		3E746C502C465F490047EAFB /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C4F2C465F490047EAFB /* BitCollections */; };
 		3E746C522C465F490047EAFB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C512C465F490047EAFB /* Collections */; };
@@ -41,7 +59,6 @@
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
 		E3CAFFE32C453864000624DE /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE12C453864000624DE /* MathUtilities.swift */; };
 		E3CAFFE62C45386F000624DE /* SolidBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE42C45386F000624DE /* SolidBrush.swift */; };
-		E3CAFFEA2C453880000624DE /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE82C453880000624DE /* PaletteView.swift */; };
 		E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE72C453880000624DE /* DashboardView.swift */; };
 		E3CAFFEE2C454406000624DE /* BrushPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFED2C454406000624DE /* BrushPreset.swift */; };
 		E3CAFFF02C454541000624DE /* SparkleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFEF2C45453C000624DE /* SparkleBrush.swift */; };
@@ -54,6 +71,25 @@
 		3E0317BA2C47BE74006D2E16 /* CurveProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveProcessing.swift; sourceTree = "<group>"; };
 		3E0317C82C47C496006D2E16 /* CurveExtruderWithEndcaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveExtruderWithEndcaps.swift; sourceTree = "<group>"; };
 		3E0317CA2C47C86A006D2E16 /* SolidBrushVertex+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SolidBrushVertex+LowLevelMesh.swift"; sourceTree = "<group>"; };
+		3E53BAAD2C4FA11100EC4135 /* DrawingCanvasVisualizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasVisualizationView.swift; sourceTree = "<group>"; };
+		3E53BAAF2C4FA12E00EC4135 /* DrawingCanvasPlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasPlacementView.swift; sourceTree = "<group>"; };
+		3E53BAB12C4FA14C00EC4135 /* DrawingCanvasConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasConfigurationView.swift; sourceTree = "<group>"; };
+		3E53BAB32C4FA16000EC4135 /* DrawingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvas.swift; sourceTree = "<group>"; };
+		3E53BAB62C4FA9E100EC4135 /* SplashScreenForeground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenForeground.swift; sourceTree = "<group>"; };
+		3E53BAB82C4FAA1900EC4135 /* SplashScreenBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenBackgroundView.swift; sourceTree = "<group>"; };
+		3E53BABA2C4FAA3600EC4135 /* SpalshScreenBackgroundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpalshScreenBackgroundComponent.swift; sourceTree = "<group>"; };
+		3E53BAC02C4FAA9300EC4135 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		3E53BAC32C4FAB4F00EC4135 /* DrawingDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDocument.swift; sourceTree = "<group>"; };
+		3E53BAC52C4FAB6400EC4135 /* DrawingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingSource.swift; sourceTree = "<group>"; };
+		3E53BAC72C4FAB7800EC4135 /* AnchorEntityInputProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorEntityInputProvider.swift; sourceTree = "<group>"; };
+		3E53BACA2C4FAC5E00EC4135 /* PresetBrushStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetBrushStroke.swift; sourceTree = "<group>"; };
+		3E53BACB2C4FAC5E00EC4135 /* PresetBrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetBrushView.swift; sourceTree = "<group>"; };
+		3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushTypeView.swift; sourceTree = "<group>"; };
+		3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
+		3E53BAD02C4FAC5E00EC4135 /* BrushState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushState.swift; sourceTree = "<group>"; };
+		3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMeshView.swift; sourceTree = "<group>"; };
+		3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SplashScreenBackground.metal; sourceTree = "<group>"; };
+		3E53BADB2C4FBC7800EC4135 /* DistanceFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceFunctions.h; sourceTree = "<group>"; };
 		3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleDrawingMeshGenerator.swift; sourceTree = "<group>"; };
 		3E746C592C4660230047EAFB /* MetalUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUtilities.swift; sourceTree = "<group>"; };
 		3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushCurvePoint.swift; sourceTree = "<group>"; };
@@ -154,6 +190,69 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		3E53BAB52C4FA95600EC4135 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				3E53BAAD2C4FA11100EC4135 /* DrawingCanvasVisualizationView.swift */,
+				3E53BAAF2C4FA12E00EC4135 /* DrawingCanvasPlacementView.swift */,
+				3E53BAB12C4FA14C00EC4135 /* DrawingCanvasConfigurationView.swift */,
+				3E53BAB32C4FA16000EC4135 /* DrawingCanvas.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		3E53BAC22C4FAA9A00EC4135 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3E53BADB2C4FBC7800EC4135 /* DistanceFunctions.h */,
+				3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */,
+				3E53BABA2C4FAA3600EC4135 /* SpalshScreenBackgroundComponent.swift */,
+				3E53BAB82C4FAA1900EC4135 /* SplashScreenBackgroundView.swift */,
+				3E53BAB62C4FA9E100EC4135 /* SplashScreenForeground.swift */,
+				3E53BAC02C4FAA9300EC4135 /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		3E53BAC92C4FAB9200EC4135 /* SupportElements */ = {
+			isa = PBXGroup;
+			children = (
+				3E53BAC32C4FAB4F00EC4135 /* DrawingDocument.swift */,
+				3E53BAC52C4FAB6400EC4135 /* DrawingSource.swift */,
+				3E53BAC72C4FAB7800EC4135 /* AnchorEntityInputProvider.swift */,
+			);
+			path = SupportElements;
+			sourceTree = "<group>";
+		};
+		3E53BACC2C4FAC5E00EC4135 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				3E53BACA2C4FAC5E00EC4135 /* PresetBrushStroke.swift */,
+				3E53BACB2C4FAC5E00EC4135 /* PresetBrushView.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		3E53BACF2C4FAC5E00EC4135 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				3E53BACC2C4FAC5E00EC4135 /* Presets */,
+				3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */,
+				3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		3E53BAD22C4FAC5E00EC4135 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3E53BACF2C4FAC5E00EC4135 /* Palette */,
+				3E53BAD02C4FAC5E00EC4135 /* BrushState.swift */,
+				3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		3E746C4B2C465EBF0047EAFB /* Sparkle */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
+				3E53BAD22C4FAC5E00EC4135 /* UI */,
+				3E53BAC92C4FAB9200EC4135 /* SupportElements */,
+				3E53BAC22C4FAA9A00EC4135 /* SplashScreen */,
+				3E53BAB52C4FA95600EC4135 /* Canvas */,
 				E3CAFFF92C4554AA000624DE /* Brush */,
 				E3CAFFE22C453864000624DE /* Utilities */,
 				E3CAFFE92C453880000624DE /* UserInterface */,
@@ -358,27 +461,44 @@
 			files = (
 				3E8DBCAD2C47B51600C54F1A /* SolidBrushComponent.swift in Sources */,
 				E3CAFFE62C45386F000624DE /* SolidBrush.swift in Sources */,
+				3E53BABB2C4FAA3600EC4135 /* SpalshScreenBackgroundComponent.swift in Sources */,
+				3E53BAAE2C4FA11100EC4135 /* DrawingCanvasVisualizationView.swift in Sources */,
 				3E746C5A2C4660230047EAFB /* MetalUtilities.swift in Sources */,
+				3E53BAC82C4FAB7800EC4135 /* AnchorEntityInputProvider.swift in Sources */,
 				E3CAFFFD2C45555C000624DE /* DrawingViewExtension.swift in Sources */,
 				E3CAFFEE2C454406000624DE /* BrushPreset.swift in Sources */,
-				E3CAFFEA2C453880000624DE /* PaletteView.swift in Sources */,
+				3E53BAC42C4FAB4F00EC4135 /* DrawingDocument.swift in Sources */,
 				3E8DBCA32C47B14E00C54F1A /* SparkleBrushCurvePoint.swift in Sources */,
 				E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */,
+				3E53BAD32C4FAC5E00EC4135 /* PresetBrushView.swift in Sources */,
+				3E53BAD42C4FAC5E00EC4135 /* DrawingMeshView.swift in Sources */,
+				3E53BAD52C4FAC5E00EC4135 /* BrushState.swift in Sources */,
+				3E53BAD62C4FAC5E00EC4135 /* PresetBrushStroke.swift in Sources */,
+				3E53BAD72C4FAC5E00EC4135 /* PaletteView.swift in Sources */,
+				3E53BAD82C4FAC5E00EC4135 /* BrushTypeView.swift in Sources */,
 				3E746C622C466F860047EAFB /* SmoothCurveSampler.swift in Sources */,
+				3E53BAC12C4FAA9300EC4135 /* SplashScreenView.swift in Sources */,
+				3E53BAC62C4FAB6400EC4135 /* DrawingSource.swift in Sources */,
+				3E53BAB92C4FAA1900EC4135 /* SplashScreenBackgroundView.swift in Sources */,
 				3E0317CB2C47C86A006D2E16 /* SolidBrushVertex+LowLevelMesh.swift in Sources */,
 				3E8DBCA52C47B1A300C54F1A /* SparkleBrushStyleProvider.swift in Sources */,
+				3E53BAB22C4FA14C00EC4135 /* DrawingCanvasConfigurationView.swift in Sources */,
 				3E8DBC9F2C47AEB100C54F1A /* SparkleBrushComponent.swift in Sources */,
 				3E746C602C466B5A0047EAFB /* CurveSample.swift in Sources */,
+				3E53BAB02C4FA12E00EC4135 /* DrawingCanvasPlacementView.swift in Sources */,
 				3E0317C92C47C496006D2E16 /* CurveExtruderWithEndcaps.swift in Sources */,
 				3E0317BB2C47BE74006D2E16 /* CurveProcessing.swift in Sources */,
 				E3CAFFF02C454541000624DE /* SparkleBrush.swift in Sources */,
 				3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */,
 				3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */,
 				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
+				3E53BAB42C4FA16000EC4135 /* DrawingCanvas.swift in Sources */,
 				3E8DBCA72C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift in Sources */,
 				3E746C5D2C46660C0047EAFB /* SolidBrushCurvePoint.swift in Sources */,
 				3E746C642C46705F0047EAFB /* SolidBrushStyleProvider.swift in Sources */,
 				E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */,
+				3E53BAB72C4FA9E100EC4135 /* SplashScreenForeground.swift in Sources */,
+				3E53BADA2C4FBC6400EC4135 /* SplashScreenBackground.metal in Sources */,
 				E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */,
 				3E8DBCAB2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift in Sources */,
 				3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */,
