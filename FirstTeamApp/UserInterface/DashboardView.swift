@@ -33,16 +33,18 @@ struct DashboardView: View {
             Text("LAY")
                 .font(.system(size: 100, weight: .thin, design: .rounded))
                 .fontWeight(.thin)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color.white)
                 .kerning(60)
+                .shadow(radius: 4)
                 .padding(.leading, 270)
                 .padding(.bottom, 100)
             
-            Text("Spatial Drawing\nfor VisionOs")
-                .font(.system(size: 34, weight: .thin, design: .rounded))
+            Text("Shape Art\n and your surroundings")
+                .font(.system(size: 28, weight: .thin, design: .rounded))
                 .fontWeight(.light)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
+                .shadow(radius: 4)
                 .padding(.top, 150)
                 
             
