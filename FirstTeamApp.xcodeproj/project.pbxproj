@@ -32,6 +32,7 @@
 		3E53BAD72C4FAC5E00EC4135 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */; };
 		3E53BAD82C4FAC5E00EC4135 /* BrushTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */; };
 		3E53BADA2C4FBC6400EC4135 /* SplashScreenBackground.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */; };
+		3E53BAF22C4FFF8800EC4135 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAF12C4FFF8800EC4135 /* TestView.swift */; };
 		3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */; };
 		3E746C502C465F490047EAFB /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C4F2C465F490047EAFB /* BitCollections */; };
 		3E746C522C465F490047EAFB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C512C465F490047EAFB /* Collections */; };
@@ -90,6 +91,7 @@
 		3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMeshView.swift; sourceTree = "<group>"; };
 		3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SplashScreenBackground.metal; sourceTree = "<group>"; };
 		3E53BADB2C4FBC7800EC4135 /* DistanceFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceFunctions.h; sourceTree = "<group>"; };
+		3E53BAF12C4FFF8800EC4135 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleDrawingMeshGenerator.swift; sourceTree = "<group>"; };
 		3E746C592C4660230047EAFB /* MetalUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUtilities.swift; sourceTree = "<group>"; };
 		3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushCurvePoint.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				3E53BAB82C4FAA1900EC4135 /* SplashScreenBackgroundView.swift */,
 				3E53BAB62C4FA9E100EC4135 /* SplashScreenForeground.swift */,
 				3E53BAC02C4FAA9300EC4135 /* SplashScreenView.swift */,
+				3E53BAF12C4FFF8800EC4135 /* TestView.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				3E53BADA2C4FBC6400EC4135 /* SplashScreenBackground.metal in Sources */,
 				E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */,
 				3E8DBCAB2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift in Sources */,
+				3E53BAF22C4FFF8800EC4135 /* TestView.swift in Sources */,
 				3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */,
 				3E8DBCB12C47B54C00C54F1A /* CurveExtruder.swift in Sources */,
 				E3CAFFE32C453864000624DE /* MathUtilities.swift in Sources */,
