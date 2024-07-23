@@ -32,8 +32,6 @@
 		3E53BAD72C4FAC5E00EC4135 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */; };
 		3E53BAD82C4FAC5E00EC4135 /* BrushTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */; };
 		3E53BADA2C4FBC6400EC4135 /* SplashScreenBackground.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */; };
-		3E53BAE12C4FDF0E00EC4135 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAE02C4FDF0E00EC4135 /* FirstTeamAppApp.swift */; };
-		3E53BAE72C4FDF9C00EC4135 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 3E53BAE52C4FDF9C00EC4135 /* RealityKitContent */; };
 		3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */; };
 		3E746C502C465F490047EAFB /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C4F2C465F490047EAFB /* BitCollections */; };
 		3E746C522C465F490047EAFB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 3E746C512C465F490047EAFB /* Collections */; };
@@ -54,6 +52,7 @@
 		3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCAE2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift */; };
 		3E8DBCB12C47B54C00C54F1A /* CurveExtruder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */; };
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
+		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
 		3E9F18572C3C3E6200766004 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18562C3C3E6200766004 /* DrawingView.swift */; };
 		3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
@@ -91,8 +90,6 @@
 		3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMeshView.swift; sourceTree = "<group>"; };
 		3E53BAD92C4FBC6400EC4135 /* SplashScreenBackground.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SplashScreenBackground.metal; sourceTree = "<group>"; };
 		3E53BADB2C4FBC7800EC4135 /* DistanceFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceFunctions.h; sourceTree = "<group>"; };
-		3E53BAE02C4FDF0E00EC4135 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
-		3E53BAE52C4FDF9C00EC4135 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleDrawingMeshGenerator.swift; sourceTree = "<group>"; };
 		3E746C592C4660230047EAFB /* MetalUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUtilities.swift; sourceTree = "<group>"; };
 		3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushCurvePoint.swift; sourceTree = "<group>"; };
@@ -109,6 +106,8 @@
 		3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveExtruder.swift; sourceTree = "<group>"; };
 		3E8DBCB22C47BA7400C54F1A /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		3E9F184B2C3C3E6200766004 /* FirstTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E9F184F2C3C3E6200766004 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
 		3E9F18562C3C3E6200766004 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,14 +253,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		3E53BAE62C4FDF9C00EC4135 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				3E53BAE52C4FDF9C00EC4135 /* RealityKitContent */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		3E746C4B2C465EBF0047EAFB /* Sparkle */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				3E9F184D2C3C3E6200766004 /* FirstTeamApp */,
+				3E9F184E2C3C3E6200766004 /* Packages */,
 				3E9F184C2C3C3E6200766004 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -296,7 +288,7 @@
 		3E9F184D2C3C3E6200766004 /* FirstTeamApp */ = {
 			isa = PBXGroup;
 			children = (
-				3E53BAE02C4FDF0E00EC4135 /* FirstTeamAppApp.swift */,
+				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
 				3E53BAD22C4FAC5E00EC4135 /* UI */,
 				3E53BAC92C4FAB9200EC4135 /* SupportElements */,
 				3E53BAC22C4FAA9A00EC4135 /* SplashScreen */,
@@ -310,9 +302,16 @@
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
 				3E9F185C2C3C3E6300766004 /* Preview Content */,
-				3E53BAE62C4FDF9C00EC4135 /* Packages */,
 			);
 			path = FirstTeamApp;
+			sourceTree = "<group>";
+		};
+		3E9F184E2C3C3E6200766004 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				3E9F184F2C3C3E6200766004 /* RealityKitContent */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		3E9F185C2C3C3E6300766004 /* Preview Content */ = {
@@ -449,7 +448,6 @@
 			files = (
 				3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */,
 				3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */,
-				3E53BAE72C4FDF9C00EC4135 /* RealityKitContent in Resources */,
 				3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,13 +491,13 @@
 				E3CAFFF02C454541000624DE /* SparkleBrush.swift in Sources */,
 				3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */,
 				3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */,
+				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
 				3E53BAB42C4FA16000EC4135 /* DrawingCanvas.swift in Sources */,
 				3E8DBCA72C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift in Sources */,
 				3E746C5D2C46660C0047EAFB /* SolidBrushCurvePoint.swift in Sources */,
 				3E746C642C46705F0047EAFB /* SolidBrushStyleProvider.swift in Sources */,
 				E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */,
 				3E53BAB72C4FA9E100EC4135 /* SplashScreenForeground.swift in Sources */,
-				3E53BAE12C4FDF0E00EC4135 /* FirstTeamAppApp.swift in Sources */,
 				3E53BADA2C4FBC6400EC4135 /* SplashScreenBackground.metal in Sources */,
 				E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */,
 				3E8DBCAB2C47B39300C54F1A /* SparkleDrawingMeshGenerator+Simulation.swift in Sources */,
@@ -641,7 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstTeamApp/Preview Content\"";
-				DEVELOPMENT_TEAM = WLW428B75Y;
+				DEVELOPMENT_TEAM = 4X56JBA2R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -670,7 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstTeamApp/Preview Content\"";
-				DEVELOPMENT_TEAM = WLW428B75Y;
+				DEVELOPMENT_TEAM = 4X56JBA2R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";

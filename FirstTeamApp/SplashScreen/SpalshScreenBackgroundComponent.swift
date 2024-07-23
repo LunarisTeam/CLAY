@@ -9,6 +9,7 @@ import RealityKit
 import RealityKitContent
 
 /// A RealityKit component that holds the data related to the splash screen background texture.
+///
 /// The component structure also provides functions to manage the generation of the texture each frame.
 struct SplashScreenBackgroundComponent: TransientComponent {
     private static let computePipeline: MTLComputePipelineState? = makeComputePipeline(named: "splashScreenBackgroundKernel")

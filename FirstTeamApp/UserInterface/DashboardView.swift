@@ -9,7 +9,7 @@ import RealityKit
 import SwiftUI
 
 struct DashboardView: View {
-    
+    @Environment(\.setMode) var setMode
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.openWindow) var openWindow
     @Environment(\.dismissWindow) var dismissWindow
@@ -56,11 +56,9 @@ struct DashboardView: View {
                 Spacer(minLength: 50)
                 
                 Button {
-                    dismissWindow(id: "main")
-                    openWindow(id: "palette")
                     
                     Task {
-                        await openImmersiveSpace(id: "DrawingView")
+                        await setMode(.chooseWorkVolume)
                     }
                     
                 } label: {
