@@ -70,9 +70,9 @@ struct FirstTeamAppApp: App {
     var body: some Scene {
         Group {
             WindowGroup(id: Self.splashScreenWindowId) {
-                SplashScreenView()
+                DashboardView()
                     .environment(\.setMode, setMode)
-                    .frame(width: 1000, height: 700)
+                    .frame(width: 1000, height: 800)
                     .fixedSize()
             }
             .windowResizability(.contentSize)
