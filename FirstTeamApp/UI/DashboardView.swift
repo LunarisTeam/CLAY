@@ -9,6 +9,9 @@ import RealityKit
 import SwiftUI
 
 struct DashboardView: View {
+    
+    private static let startButtonWidth: CGFloat = 150
+    
     @Environment(\.setMode) var setMode
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.openWindow) var openWindow
@@ -46,33 +49,28 @@ struct DashboardView: View {
                 .multilineTextAlignment(.center)
                 .shadow(radius: 4)
                 .padding(.top, 150)
+            
+            VStack {
+                Spacer(minLength: 400)
                 
-            
-//            VStack {
-//                Spacer(minLength: 500)
-//                
-//                // Something goes here (logo maybe)
-//                
-//                Spacer(minLength: 50)
-//                
-//                Button {
-//                    
-//                    Task {
-//                        await setMode(.chooseWorkVolume)
-//                    }
-//                    
-//                } label: {
-//                    Text("Start").frame(minWidth: 150)
-//                }
-//                
-//                .shadow( radius: 20)
-//                .opacity(1)
-//                .glassBackgroundEffect()
-//                .controlSize(.extraLarge)
-//                
-//                Spacer(minLength: 100)
-//            }
-            
+                
+                
+                Spacer(minLength: 50)
+                
+                Button {
+                    Task {
+                        await setMode(.chooseWorkVolume)
+                    }
+                } label: {
+                    Text("Start").frame(minWidth: Self.startButtonWidth)
+                }
+                .glassBackgroundEffect()
+                .controlSize(.extraLarge)
+                .frame(width: Self.startButtonWidth)
+                
+                Spacer(minLength: 100)
+            }
+            .frame(depth: 0, alignment: DepthAlignment.back)
         }
     }
 }
