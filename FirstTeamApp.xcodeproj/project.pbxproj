@@ -51,6 +51,7 @@
 		3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
+		3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8A87B2C513BA600599BC7 /* RealityKitContent */; };
 		E3CAFFE32C453864000624DE /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE12C453864000624DE /* MathUtilities.swift */; };
 		E3CAFFE62C45386F000624DE /* SolidBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE42C45386F000624DE /* SolidBrush.swift */; };
 		E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE72C453880000624DE /* DashboardView.swift */; };
@@ -76,7 +77,6 @@
 		3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 		3E53BAD02C4FAC5E00EC4135 /* BrushState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushState.swift; sourceTree = "<group>"; };
 		3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMeshView.swift; sourceTree = "<group>"; };
-		3E639C012C513B0B00792C3B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleDrawingMeshGenerator.swift; sourceTree = "<group>"; };
 		3E746C592C4660230047EAFB /* MetalUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUtilities.swift; sourceTree = "<group>"; };
 		3E746C5C2C46660C0047EAFB /* SolidBrushCurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrushCurvePoint.swift; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE8A87B2C513BA600599BC7 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		E3CAFFE12C453864000624DE /* MathUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
 		E3CAFFE42C45386F000624DE /* SolidBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidBrush.swift; sourceTree = "<group>"; };
 		E3CAFFE72C453880000624DE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -223,14 +224,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		3E639C022C513B0B00792C3B /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				3E639C012C513B0B00792C3B /* RealityKitContent */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		3E746C4B2C465EBF0047EAFB /* Sparkle */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +242,6 @@
 		3E9F18422C3C3E6200766004 = {
 			isa = PBXGroup;
 			children = (
-				3E639C022C513B0B00792C3B /* Packages */,
 				3E9F184D2C3C3E6200766004 /* FirstTeamApp */,
 			);
 			sourceTree = "<group>";
@@ -268,7 +260,7 @@
 				3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */,
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
-				E3DDD4022C51335900803DC5 /* FirstTeamApp.app */,
+				3EE8A87C2C513BA600599BC7 /* Packages */,
 				3E9F185C2C3C3E6300766004 /* Preview Content */,
 			);
 			path = FirstTeamApp;
@@ -280,6 +272,15 @@
 				3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EE8A87C2C513BA600599BC7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				3EE8A87B2C513BA600599BC7 /* RealityKitContent */,
+				E3DDD4022C51335900803DC5 /* FirstTeamApp.app */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		E3CAFFE22C453864000624DE /* Utilities */ = {
@@ -388,6 +389,7 @@
 			files = (
 				3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */,
 				3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */,
+				3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */,
 				3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
