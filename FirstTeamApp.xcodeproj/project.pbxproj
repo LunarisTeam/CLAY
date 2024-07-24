@@ -48,7 +48,6 @@
 		3E8DBCB12C47B54C00C54F1A /* CurveExtruder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */; };
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
 		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
-		3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
 		3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8A87B2C513BA600599BC7 /* RealityKitContent */; };
@@ -93,7 +92,6 @@
 		3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveExtruder.swift; sourceTree = "<group>"; };
 		3E8DBCB22C47BA7400C54F1A /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
-		3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 				E3CAFFE22C453864000624DE /* Utilities */,
 				E3CAFFE52C45386F000624DE /* Configuration */,
 				3E8DBCB22C47BA7400C54F1A /* BridgingHeader.h */,
-				3E9F18582C3C3E6200766004 /* ImageBasedLighting.skybox */,
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
 				3EE8A87C2C513BA600599BC7 /* Packages */,
@@ -390,7 +387,6 @@
 				3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */,
 				3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */,
 				3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */,
-				3E9F18592C3C3E6200766004 /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
