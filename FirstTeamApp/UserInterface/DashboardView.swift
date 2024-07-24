@@ -48,30 +48,30 @@ struct DashboardView: View {
                 .padding(.top, 150)
                 
             
-            VStack {
-                Spacer(minLength: 500)
-                
-                // Something goes here (logo maybe)
-                
-                Spacer(minLength: 50)
-                
-                Button {
-                    
-                    Task {
-                        await setMode(.chooseWorkVolume)
-                    }
-                    
-                } label: {
-                    Text("Start").frame(minWidth: 150)
-                }
-                
-                .shadow( radius: 20)
-                .opacity(1)
-                .glassBackgroundEffect()
-                .controlSize(.extraLarge)
-                
-                Spacer(minLength: 100)
-            }
+//            VStack {
+//                Spacer(minLength: 500)
+//                
+//                // Something goes here (logo maybe)
+//                
+//                Spacer(minLength: 50)
+//                
+//                Button {
+//                    
+//                    Task {
+//                        await setMode(.chooseWorkVolume)
+//                    }
+//                    
+//                } label: {
+//                    Text("Start").frame(minWidth: 150)
+//                }
+//                
+//                .shadow( radius: 20)
+//                .opacity(1)
+//                .glassBackgroundEffect()
+//                .controlSize(.extraLarge)
+//                
+//                Spacer(minLength: 100)
+//            }
             
         }
     }

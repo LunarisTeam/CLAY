@@ -1,11 +1,10 @@
 {
   "pathsToIds" : {
-    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/GridMaterial.usda" : "CB766F92-EE55-4A63-9401-E7B8C009764D",
-    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Immersive.usda" : "65F6F990-A780-4474-B78B-572E0E4E273D",
-    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Scene.usda" : "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Untitled Scene.usda" : "D560BB77-AAF3-4BDE-B7C4-989332A4688B",
-    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/GridMaterial.usda" : "66168B71-AB05-424E-8B6C-D33D6E61B08F",
-    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Immersive.usda" : "AF09ED6F-1707-48FD-8720-65B998362C09",
-    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Scene.usda" : "D66134B1-3681-4A8E-AFE5-29F257229F3B"
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/CanvasPlacementMaterial.usda" : "3E977517-2E82-4F60-AA0F-FD2F603BB644",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/NormalsMaterial.usda" : "F315EA85-528C-4A1B-8BDE-34323DE58F25",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/PresetBrushMaterial.usda" : "776FB750-0793-49B2-86C8-61EF7CEA20E4",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/SolidBrushMaterial.usda" : "F62CC7BB-A579-40DE-80CE-035133F3EF16",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/SparkleBrushMaterial.usda" : "F32015BB-2825-48EB-960E-1C1CBF4971E9",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/SplashScreenMaterial.usda" : "6274BD68-DF2D-488A-B81A-39F2E2889EB7"
   }
 }
