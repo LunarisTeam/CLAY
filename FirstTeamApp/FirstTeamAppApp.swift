@@ -81,7 +81,6 @@ struct FirstTeamAppApp: App {
             WindowGroup(id: Self.configureCanvasWindowId) {
                 DrawingCanvasConfigurationView(settings: canvas)
                     .environment(\.setMode, setMode)
-                    .frame(width: 300, height: 300)
                     .fixedSize()
             }
             .windowResizability(.contentSize)

@@ -53,12 +53,23 @@ struct DrawingCanvasConfigurationView: View {
     }
     
     var body: some View {
+        
         VStack {
-            Spacer(minLength: 20)
+            
+            
+            
+                Image("LogoSetUp")
+                .resizable()
+                
+                .frame(width: 90, height: 90)
+            
+                .padding()
+            
+            
             
             Text("Set up your canvas").font(.system(.title))
             
-            Spacer(minLength: 10)
+            
             
             // This `RealityView` contains no visible entities.
             // Its purpose is to hold `placementRestPose`, so that
@@ -84,34 +95,36 @@ struct DrawingCanvasConfigurationView: View {
             }
             .frame(depth: 0).frame(width: 0, height: 0)
             
-            Text("Drag the circular indicator to control the location of your drawing space.")
+            Text("Set up the space that you will use to create your masterpiece")
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
                 .frame(maxWidth: .infinity, alignment: .center)
-                .font(.system(.caption))
+                .font(.system(.body))
             
-            Spacer(minLength: 20)
-            
-            Button("Reset Placement") {
-                resetPlacement()
-            }
-            
-            Spacer(minLength: 20)
+            Divider()
             
             HStack {
                 Text("Size")
                 Slider(value: $settings.radius, in: 0.5...2.0)
             }
+            .padding([.vertical])
             
-            Spacer(minLength: 40)
+            
+            
+            Button("Reset Placement") {
+                resetPlacement()
+            }
+            
+            
             
             Button("Start Drawing") {
                 Task { await setMode(.drawing) }
             }
             
-            Spacer(minLength: 20)
+            
         }
-        .padding(20)
-        .frame(width: 300, height: 300)
+        .padding(10)
+        .frame(width: 300, height: 450)
     }
 }
+
