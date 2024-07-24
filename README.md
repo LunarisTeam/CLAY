@@ -13,3 +13,7 @@ As a starting point, the team took inspiration from a great WWDC Video which is 
 
 >[!TIP]
 >In order to experience the drawing feature of this application, an actual Vision Pro device is required.
+
+
+## Credits
+* Apple, [Build a spatial drawing app with RealityKit](https://developer.apple.com/videos/play/wwdc2024/10104/)
