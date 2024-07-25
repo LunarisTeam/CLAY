@@ -5,7 +5,7 @@
 //  Created by Davide Castaldi on 23/07/24.
 //
 
-struct PresetBrushStroke {
+struct PreviewBrushStroke {
     static let samples: [SIMD3<Float>] = {
         let points: [SIMD2<Float>] = [
             [80, 273],

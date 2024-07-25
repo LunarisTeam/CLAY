@@ -68,6 +68,7 @@ struct SolidBrushStyleView: View {
         VStack {
             let colorBinding = Color.makeBinding(from: $settings.color)
             ColorPicker("Color", selection: colorBinding)
+                .offset(z: 20)
             
             HStack {
                 Text("Roughness")
@@ -134,13 +135,36 @@ struct SparkleBrushStyleView: View {
 
 struct BrushTypeView: View {
     @Binding var brushState: BrushState
-
+        
+    @State var showPreview: Bool = true
+    
+    private func refresh() {
+        Task {
+            showPreview = false
+            
+            try! await Task.sleep(nanoseconds: 250_000_000)
+            
+            showPreview = true
+        }
+    }
+    
     var body: some View {
         VStack {
             Picker("Brush Type", selection: $brushState.brushType) {
                 ForEach(BrushType.allCases) { Text($0.label).tag($0) }
             }
             .pickerStyle(.segmented)
+            
+            RoundedRectangle(cornerRadius: 10)
+                .fill(.ultraThickMaterial)
+                .overlay {
+                    if showPreview {
+                        PreviewBrushView(brushState: $brushState)
+                    } else {
+                        ProgressView()
+                    }
+                }
+                .frame(height: 250)
             
             ScrollView(.vertical) {
                 ZStack {
@@ -159,5 +183,9 @@ struct BrushTypeView: View {
                 .animation(.easeInOut, value: brushState.brushType)
             }
         }
+        .onChange(of: brushState.brushType) { refresh() }
+        .onChange(of: brushState.uniformStyleSettings) { refresh() }
+        .onChange(of: brushState.sparkleStyleSettings) { refresh() }
+        .onChange(of: brushState.calligraphicStyleSettings) { refresh() }
     }
 }

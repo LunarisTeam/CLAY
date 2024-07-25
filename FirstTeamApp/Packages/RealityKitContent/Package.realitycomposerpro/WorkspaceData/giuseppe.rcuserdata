@@ -1,0 +1,108 @@
+{
+  "advancedEditorSelectedIdentifier" : "StatisticsPluginID",
+  "openSceneRelativePaths" : [
+    "CanvasPlacementMaterial.usda",
+    "SparkleBrushMaterial.usda",
+    "SolidBrushMaterial.usda"
+  ],
+  "recentIdentifiers" : {
+
+  },
+  "sceneCameraHistory" : {
+    "3E977517-2E82-4F60-AA0F-FD2F603BB644" : [
+      {
+        "date" : 743527382.856492,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          -0,
+          0,
+          -0,
+          0.8737018,
+          -0.4864618,
+          0,
+          0,
+          0.4864618,
+          0.8737018,
+          0,
+          0,
+          1.1455336,
+          1.984122,
+          1
+        ]
+      }
+    ],
+    "F32015BB-2825-48EB-960E-1C1CBF4971E9" : [
+      {
+        "date" : 743539512.030323,
+        "title" : "Untitled",
+        "transform" : [
+          0.99999803,
+          0,
+          0.0019683826,
+          0,
+          0.0009841913,
+          0.8660254,
+          -0.49999902,
+          0,
+          -0.0017046693,
+          0.5,
+          0.86602366,
+          0,
+          -0.031667996,
+          9.288602,
+          16.088303,
+          1
+        ]
+      },
+      {
+        "date" : 743527382.854361,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          -0,
+          0,
+          -0,
+          0.8660254,
+          -0.5,
+          0,
+          0,
+          0.5,
+          0.8660254,
+          0,
+          0,
+          0.19393086,
+          0.33589813,
+          1
+        ]
+      }
+    ],
+    "F62CC7BB-A579-40DE-80CE-035133F3EF16" : [
+      {
+        "date" : 743539439.091079,
+        "title" : "Untitled",
+        "transform" : [
+          1,
+          0,
+          -0,
+          0,
+          -0,
+          0.8660254,
+          -0.5,
+          0,
+          0,
+          0.5,
+          0.8660254,
+          0,
+          0,
+          0.2737204,
+          0.47409773,
+          1
+        ]
+      }
+    ]
+  },
+  "selectedSceneRelativePath" : "SparkleBrushMaterial.usda"
+}

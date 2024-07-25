@@ -21,10 +21,10 @@
 		3E53BAC42C4FAB4F00EC4135 /* DrawingDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC32C4FAB4F00EC4135 /* DrawingDocument.swift */; };
 		3E53BAC62C4FAB6400EC4135 /* DrawingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC52C4FAB6400EC4135 /* DrawingSource.swift */; };
 		3E53BAC82C4FAB7800EC4135 /* AnchorEntityInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAC72C4FAB7800EC4135 /* AnchorEntityInputProvider.swift */; };
-		3E53BAD32C4FAC5E00EC4135 /* PresetBrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACB2C4FAC5E00EC4135 /* PresetBrushView.swift */; };
+		3E53BAD32C4FAC5E00EC4135 /* PreviewBrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACB2C4FAC5E00EC4135 /* PreviewBrushView.swift */; };
 		3E53BAD42C4FAC5E00EC4135 /* DrawingMeshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD12C4FAC5E00EC4135 /* DrawingMeshView.swift */; };
 		3E53BAD52C4FAC5E00EC4135 /* BrushState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BAD02C4FAC5E00EC4135 /* BrushState.swift */; };
-		3E53BAD62C4FAC5E00EC4135 /* PresetBrushStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACA2C4FAC5E00EC4135 /* PresetBrushStroke.swift */; };
+		3E53BAD62C4FAC5E00EC4135 /* PreviewBrushStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACA2C4FAC5E00EC4135 /* PreviewBrushStroke.swift */; };
 		3E53BAD72C4FAC5E00EC4135 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */; };
 		3E53BAD82C4FAC5E00EC4135 /* BrushTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */; };
 		3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C4C2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift */; };
@@ -70,8 +70,8 @@
 		3E53BAC32C4FAB4F00EC4135 /* DrawingDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDocument.swift; sourceTree = "<group>"; };
 		3E53BAC52C4FAB6400EC4135 /* DrawingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingSource.swift; sourceTree = "<group>"; };
 		3E53BAC72C4FAB7800EC4135 /* AnchorEntityInputProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorEntityInputProvider.swift; sourceTree = "<group>"; };
-		3E53BACA2C4FAC5E00EC4135 /* PresetBrushStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetBrushStroke.swift; sourceTree = "<group>"; };
-		3E53BACB2C4FAC5E00EC4135 /* PresetBrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetBrushView.swift; sourceTree = "<group>"; };
+		3E53BACA2C4FAC5E00EC4135 /* PreviewBrushStroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBrushStroke.swift; sourceTree = "<group>"; };
+		3E53BACB2C4FAC5E00EC4135 /* PreviewBrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBrushView.swift; sourceTree = "<group>"; };
 		3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushTypeView.swift; sourceTree = "<group>"; };
 		3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 		3E53BAD02C4FAC5E00EC4135 /* BrushState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushState.swift; sourceTree = "<group>"; };
@@ -192,19 +192,19 @@
 			path = SupportElements;
 			sourceTree = "<group>";
 		};
-		3E53BACC2C4FAC5E00EC4135 /* Presets */ = {
+		3E53BACC2C4FAC5E00EC4135 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
-				3E53BACA2C4FAC5E00EC4135 /* PresetBrushStroke.swift */,
-				3E53BACB2C4FAC5E00EC4135 /* PresetBrushView.swift */,
+				3E53BACA2C4FAC5E00EC4135 /* PreviewBrushStroke.swift */,
+				3E53BACB2C4FAC5E00EC4135 /* PreviewBrushView.swift */,
 			);
-			path = Presets;
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		3E53BACF2C4FAC5E00EC4135 /* Palette */ = {
 			isa = PBXGroup;
 			children = (
-				3E53BACC2C4FAC5E00EC4135 /* Presets */,
+				3E53BACC2C4FAC5E00EC4135 /* Preview */,
 				3E53BACD2C4FAC5E00EC4135 /* BrushTypeView.swift */,
 				3E53BACE2C4FAC5E00EC4135 /* PaletteView.swift */,
 			);
@@ -405,10 +405,10 @@
 				3E53BAC42C4FAB4F00EC4135 /* DrawingDocument.swift in Sources */,
 				3E8DBCA32C47B14E00C54F1A /* SparkleBrushCurvePoint.swift in Sources */,
 				E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */,
-				3E53BAD32C4FAC5E00EC4135 /* PresetBrushView.swift in Sources */,
+				3E53BAD32C4FAC5E00EC4135 /* PreviewBrushView.swift in Sources */,
 				3E53BAD42C4FAC5E00EC4135 /* DrawingMeshView.swift in Sources */,
 				3E53BAD52C4FAC5E00EC4135 /* BrushState.swift in Sources */,
-				3E53BAD62C4FAC5E00EC4135 /* PresetBrushStroke.swift in Sources */,
+				3E53BAD62C4FAC5E00EC4135 /* PreviewBrushStroke.swift in Sources */,
 				3E53BAD72C4FAC5E00EC4135 /* PaletteView.swift in Sources */,
 				3E53BAD82C4FAC5E00EC4135 /* BrushTypeView.swift in Sources */,
 				3E746C622C466F860047EAFB /* SmoothCurveSampler.swift in Sources */,

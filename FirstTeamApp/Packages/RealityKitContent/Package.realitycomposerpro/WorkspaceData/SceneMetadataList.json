@@ -1,0 +1,33 @@
+{
+  "F32015BB-2825-48EB-960E-1C1CBF4971E9" : {
+    "objectMetadataList" : [
+      [
+        "F32015BB-2825-48EB-960E-1C1CBF4971E9",
+        "Root",
+        "SparkleBrushMaterial",
+        "SparkleBrushGeometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F32015BB-2825-48EB-960E-1C1CBF4971E9",
+        "Root",
+        "SparkleBrushMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F32015BB-2825-48EB-960E-1C1CBF4971E9",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}
