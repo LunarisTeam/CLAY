@@ -1,5 +1,5 @@
 //
-//  PresetBrushStroke.swift
+//  PreviewBrushStroke.swift
 //  FirstTeamApp
 //
 //  Created by Davide Castaldi on 23/07/24.
