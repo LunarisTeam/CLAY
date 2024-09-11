@@ -20,7 +20,7 @@ extension SparkleDrawingMeshGenerator {
     /// - Parameters:
     ///   - particleCapacity: The number of particles the `LowLevelMesh` is to support.
     ///   - particleCount: The number of particles currently visible in the `LowLevelMesh`.
-    static func makeLowLevelMesh(particleCapacity: Int, particleCount: Int) throws -> LowLevelMesh {
+    @MainActor static func makeLowLevelMesh(particleCapacity: Int, particleCount: Int) throws -> LowLevelMesh {
         var descriptor = LowLevelMesh.Descriptor()
         
         descriptor.vertexCapacity = 4 * particleCapacity
@@ -65,7 +65,7 @@ extension SparkleDrawingMeshGenerator {
     ///   - particleCount: The number of particles active in `input`.
     ///   - commandBuffer: The Metal command buffer to use.
     ///   - encoder: The Metal compute command encoder to use.
-    static func populate(input: MTLBuffer,
+    @MainActor static func populate(input: MTLBuffer,
                          output: LowLevelMesh,
                          particleCount: Int,
                          commandBuffer: MTLCommandBuffer,

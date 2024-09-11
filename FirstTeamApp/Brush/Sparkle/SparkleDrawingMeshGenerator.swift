@@ -143,7 +143,7 @@ final class SparkleDrawingMeshGenerator {
     }
     
     /// Reallocates `lowLevelMesh` and `simulationBuffer` to a capacity of at least `newParticleCount`.
-    private func reallocateBuffers(newParticleCount: Int) throws {
+    @MainActor private func reallocateBuffers(newParticleCount: Int) throws {
         guard newParticleCount > particleCapacity else {
             // This particle count is already supported by the current `LowLevelMesh`.
             return

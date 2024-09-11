@@ -27,6 +27,7 @@ struct CurveExtruder {
     private var cachedSampleCount: Int = 0
     
     /// The number of samples for which `lowLevelMesh` has capacity.
+    @MainActor
     private var sampleCapacity: Int {
         let vertexCapacity = lowLevelMesh?.vertexCapacity ?? 0
         let indexCapacity = lowLevelMesh?.indexCapacity ?? 0
@@ -42,7 +43,7 @@ struct CurveExtruder {
     
     /// Sometimes the mesh can have huge buffer sizes when not needed, so if needed it reallocates `lowLevelMesh`.
     /// - Returns: True if it was reallocated and then callers must reapply the `LowLevelMesh` to their RealityKit `MeshResource`.
-    private mutating func reallocateMeshIfNeeded() throws -> Bool {
+    @MainActor private mutating func reallocateMeshIfNeeded() throws -> Bool {
         guard samples.count > sampleCapacity else {
             //if it is small, don't reallocate it
             return false
@@ -98,7 +99,7 @@ struct CurveExtruder {
     }
     
     /// Generates a `LowLevelMesh` suitable to be populated by `CurveExtruder` with the specified vertex and index capacity.
-    private static func makeLowLevelMesh(vertexCapacity: Int, indexCapacity: Int) throws -> LowLevelMesh {
+    @MainActor private static func makeLowLevelMesh(vertexCapacity: Int, indexCapacity: Int) throws -> LowLevelMesh {
         var descriptor = LowLevelMesh.Descriptor()
         
         descriptor.vertexCapacity = vertexCapacity
