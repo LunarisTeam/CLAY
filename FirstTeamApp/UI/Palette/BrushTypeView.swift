@@ -156,7 +156,7 @@ struct BrushTypeView: View {
                     if showPreview {
                         PreviewBrushView(brushState: $brushState)
                             .scaleEffect(1.5)
-                            .offset(x: 20.0, y: 20.0)
+                            .offset(x: 22.5, y: 22.5)
                     } else {
                         ProgressView()
                     }
@@ -183,12 +183,18 @@ struct BrushTypeView: View {
         .onChange(of: brushState.uniformStyleSettings) { refresh() }
         .onChange(of: brushState.sparkleStyleSettings) { refresh() }
         .onChange(of: brushState.calligraphicStyleSettings) { refresh() }
-        .toolbar {
-            ToolbarItem(placement: .bottomOrnament) {
+        .ornament(visibility: .visible, attachmentAnchor: .scene(.bottom), contentAlignment: .center) {
+            ZStack {
+                Capsule()
+                    .fill(Color("BackgroundColor"))
+                    .opacity(0.5)
+                    .blendMode(.multiply)
+                
                 Picker("Brush Type", selection: $brushState.brushType) {
                     ForEach(BrushType.allCases) { Text($0.label).tag($0) }
                 }
                 .pickerStyle(.segmented)
+                .padding(5)
             }
         }
     }

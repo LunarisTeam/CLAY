@@ -16,28 +16,24 @@ struct PaletteView: View {
     @State var isSettingsPopoverPresented: Bool = false
     
     var body: some View {
-        ZStack {
-            Color("BackgroundColor")
-                .ignoresSafeArea()
-                .opacity(0.5)
-                .blendMode(.multiply)
-            
-            VStack {
-                HStack {
-                    Text("Palette")
-                        .font(.title)
-                        .padding()
-                }
-
-                Divider()
-                    .padding(.horizontal, 20)
-
-                BrushTypeView(brushState: $brushState)
-                    .padding(.horizontal, 20)
+        NavigationStack {
+            ZStack {
+                Color("BackgroundColor")
+                    .ignoresSafeArea()
+                    .opacity(0.5)
+                    .blendMode(.multiply)
                 
-                Spacer()
+                VStack {
+                    
+                    
+                    
+                    
+                    BrushTypeView(brushState: $brushState)
+                        .padding(.horizontal, 20)
+                    
+                }
+                .padding(.vertical, 20)
             }
-            .padding(.vertical, 20)
         }
     }
 }
