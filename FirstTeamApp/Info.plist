@@ -6,6 +6,10 @@
 	<string>The drawing app needs hand tracking to detect where you draw.</string>
 	<key>NSWorldSensingUsageDescription</key>
 	<string>The drawing app needs floor plane tracking to detect where to place the drawing canvas.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>project_fonts/Quicksand-Regular.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationPreferredDefaultSceneSessionRole</key>
