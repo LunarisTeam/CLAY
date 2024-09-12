@@ -87,7 +87,7 @@ struct FirstTeamAppApp: App {
             
             WindowGroup(id: Self.paletteWindowId) {
                 PaletteView(brushState: $brushState)
-                    .frame(width: 500, height: 800, alignment: .top)
+                    .frame(width: 900, height: 500, alignment: .center)
                     .fixedSize(horizontal: true, vertical: false)
             }
             .windowResizability(.contentSize)

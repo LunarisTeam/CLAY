@@ -65,10 +65,9 @@ struct SolidBrushStyleView: View {
     @Binding var settings: SolidBrushStyleProvider.Settings
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20.0) {
             let colorBinding = Color.makeBinding(from: $settings.color)
             ColorPicker("Color", selection: colorBinding)
-                .offset(z: 20)
             
             HStack {
                 Text("Roughness")
@@ -115,7 +114,7 @@ struct SparkleBrushStyleView: View {
     @Binding var settings: SparkleBrushStyleProvider.Settings
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20.0) {
             ColorPicker("Color", selection: Color.makeBinding(from: $settings.color))
             
             HStack {
@@ -149,43 +148,48 @@ struct BrushTypeView: View {
     }
     
     var body: some View {
-        VStack {
-            Picker("Brush Type", selection: $brushState.brushType) {
-                ForEach(BrushType.allCases) { Text($0.label).tag($0) }
-            }
-            .pickerStyle(.segmented)
-            
-            RoundedRectangle(cornerRadius: 10)
+        HStack(alignment: .top) {
+            RoundedRectangle(cornerRadius: 25)
                 .fill(.ultraThickMaterial)
+                .blendMode(.overlay)
                 .overlay {
                     if showPreview {
                         PreviewBrushView(brushState: $brushState)
+                            .scaleEffect(1.5)
+                            .offset(x: 20.0, y: 20.0)
                     } else {
                         ProgressView()
                     }
                 }
-                .frame(height: 250)
-            
-            ScrollView(.vertical) {
-                ZStack {
-                    switch brushState.brushType {
-                    case .calligraphic:
-                        SolidBrushStyleView(settings: $brushState.calligraphicStyleSettings)
-                            .id("BrushStyleView")
-                    case .uniform:
-                        SolidBrushStyleView(settings: $brushState.uniformStyleSettings)
-                            .id("BrushStyleView")
-                    case .sparkle:
-                        SparkleBrushStyleView(settings: $brushState.sparkleStyleSettings)
-                            .id("BrushStyleView")
-                    }
+                .frame(width: 400)
+
+            ZStack {
+                switch brushState.brushType {
+                case .calligraphic:
+                    SolidBrushStyleView(settings: $brushState.calligraphicStyleSettings)
+                        .id("BrushStyleView")
+                case .uniform:
+                    SolidBrushStyleView(settings: $brushState.uniformStyleSettings)
+                        .id("BrushStyleView")
+                case .sparkle:
+                    SparkleBrushStyleView(settings: $brushState.sparkleStyleSettings)
+                        .id("BrushStyleView")
                 }
-                .animation(.easeInOut, value: brushState.brushType)
             }
+            .padding()
+            .animation(.easeInOut, value: brushState.brushType)
         }
         .onChange(of: brushState.brushType) { refresh() }
         .onChange(of: brushState.uniformStyleSettings) { refresh() }
         .onChange(of: brushState.sparkleStyleSettings) { refresh() }
         .onChange(of: brushState.calligraphicStyleSettings) { refresh() }
+        .toolbar {
+            ToolbarItem(placement: .bottomOrnament) {
+                Picker("Brush Type", selection: $brushState.brushType) {
+                    ForEach(BrushType.allCases) { Text($0.label).tag($0) }
+                }
+                .pickerStyle(.segmented)
+            }
+        }
     }
 }
