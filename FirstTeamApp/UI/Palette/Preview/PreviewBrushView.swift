@@ -67,6 +67,6 @@ struct PreviewBrushView: View {
                 )
             }
         }
-        .frame(depth: 0)
+        .frame(depth: 40)
     }
 }
