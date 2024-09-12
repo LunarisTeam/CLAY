@@ -17,3 +17,5 @@ As a starting point, the team took inspiration from a great WWDC Video which is 
 
 ## Credits
 * Apple, [Build a spatial drawing app with RealityKit](https://developer.apple.com/videos/play/wwdc2024/10104/)
+
+![screenshot1](./Screenshots/main-page.png)
