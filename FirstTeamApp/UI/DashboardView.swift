@@ -33,14 +33,23 @@ struct DashboardView: View {
                 .shadow(radius: 20)
                 
             
+           
             Text("LAY")
+//                ./*font(Font.custom("Quicksand", size: 100))*/
                 .font(.system(size: 100, weight: .thin, design: .rounded))
-                .fontWeight(.thin)
                 .foregroundColor(Color.white)
                 .kerning(60)
                 .shadow(radius: 4)
                 .padding(.leading, 270)
                 .padding(.bottom, 100)
+//
+                
+            
+            Image("BgText")
+                .resizable()
+                .frame(width: 630, height: 90)
+                .padding(.top, 160)
+                
             
             Text("Shape Art\n and your surroundings")
                 .font(.system(size: 28, weight: .thin, design: .rounded))

@@ -51,6 +51,14 @@
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
 		3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8A87B2C513BA600599BC7 /* RealityKitContent */; };
+		B43F87BA2C92E61C00A8B9EC /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B22C92E61B00A8B9EC /* Quicksand-Medium.ttf */; };
+		B43F87BB2C92E61C00A8B9EC /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B72C92E61B00A8B9EC /* Quicksand-VariableFont_wght.ttf */; };
+		B43F87BC2C92E61C00A8B9EC /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B42C92E61B00A8B9EC /* Quicksand-SemiBold.ttf */; };
+		B43F87BD2C92E61C00A8B9EC /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B02C92E61B00A8B9EC /* Quicksand-Bold.ttf */; };
+		B43F87BE2C92E61C00A8B9EC /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B82C92E61B00A8B9EC /* README.txt */; };
+		B43F87BF2C92E61C00A8B9EC /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B12C92E61B00A8B9EC /* Quicksand-Light.ttf */; };
+		B43F87C02C92E61C00A8B9EC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B62C92E61B00A8B9EC /* OFL.txt */; };
+		B43F87C12C92E61C00A8B9EC /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B32C92E61B00A8B9EC /* Quicksand-Regular.ttf */; };
 		E3CAFFE32C453864000624DE /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE12C453864000624DE /* MathUtilities.swift */; };
 		E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE72C453880000624DE /* DashboardView.swift */; };
 		E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */; };
@@ -94,6 +102,14 @@
 		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE8A87B2C513BA600599BC7 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		B43F87B02C92E61B00A8B9EC /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		B43F87B12C92E61B00A8B9EC /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		B43F87B22C92E61B00A8B9EC /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		B43F87B32C92E61B00A8B9EC /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		B43F87B42C92E61B00A8B9EC /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		B43F87B62C92E61B00A8B9EC /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B43F87B72C92E61B00A8B9EC /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		B43F87B82C92E61B00A8B9EC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		E3CAFFE12C453864000624DE /* MathUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
 		E3CAFFE72C453880000624DE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E3CAFFF42C4554AA000624DE /* MetalPacking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalPacking.h; sourceTree = "<group>"; };
@@ -243,6 +259,7 @@
 		3E9F184D2C3C3E6200766004 /* FirstTeamApp */ = {
 			isa = PBXGroup;
 			children = (
+				B43F87B92C92E61B00A8B9EC /* Quicksand */,
 				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
 				3E53BAD22C4FAC5E00EC4135 /* UI */,
 				3E53BAC92C4FAB9200EC4135 /* SupportElements */,
@@ -273,6 +290,29 @@
 				E3DDD4022C51335900803DC5 /* FirstTeamApp.app */,
 			);
 			path = Packages;
+			sourceTree = "<group>";
+		};
+		B43F87B52C92E61B00A8B9EC /* static */ = {
+			isa = PBXGroup;
+			children = (
+				B43F87B02C92E61B00A8B9EC /* Quicksand-Bold.ttf */,
+				B43F87B12C92E61B00A8B9EC /* Quicksand-Light.ttf */,
+				B43F87B22C92E61B00A8B9EC /* Quicksand-Medium.ttf */,
+				B43F87B32C92E61B00A8B9EC /* Quicksand-Regular.ttf */,
+				B43F87B42C92E61B00A8B9EC /* Quicksand-SemiBold.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		B43F87B92C92E61B00A8B9EC /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				B43F87B52C92E61B00A8B9EC /* static */,
+				B43F87B62C92E61B00A8B9EC /* OFL.txt */,
+				B43F87B72C92E61B00A8B9EC /* Quicksand-VariableFont_wght.ttf */,
+				B43F87B82C92E61B00A8B9EC /* README.txt */,
+			);
+			path = Quicksand;
 			sourceTree = "<group>";
 		};
 		E3CAFFE22C453864000624DE /* Utilities */ = {
@@ -370,6 +410,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43F87BA2C92E61C00A8B9EC /* Quicksand-Medium.ttf in Resources */,
+				B43F87BB2C92E61C00A8B9EC /* Quicksand-VariableFont_wght.ttf in Resources */,
+				B43F87BC2C92E61C00A8B9EC /* Quicksand-SemiBold.ttf in Resources */,
+				B43F87BD2C92E61C00A8B9EC /* Quicksand-Bold.ttf in Resources */,
+				B43F87BE2C92E61C00A8B9EC /* README.txt in Resources */,
+				B43F87BF2C92E61C00A8B9EC /* Quicksand-Light.ttf in Resources */,
+				B43F87C02C92E61C00A8B9EC /* OFL.txt in Resources */,
+				B43F87C12C92E61C00A8B9EC /* Quicksand-Regular.ttf in Resources */,
 				3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */,
 				3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */,
 				3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */,
