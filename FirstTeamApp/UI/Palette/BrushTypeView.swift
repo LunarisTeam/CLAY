@@ -187,7 +187,7 @@ struct BrushTypeView: View {
             ZStack {
                 Capsule()
                     .fill(Color("BackgroundColor"))
-                    .opacity(0.5)
+                    .opacity(0.75)
                     .blendMode(.multiply)
                 
                 Picker("Brush Type", selection: $brushState.brushType) {
