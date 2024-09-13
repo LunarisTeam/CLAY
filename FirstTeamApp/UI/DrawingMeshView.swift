@@ -21,8 +21,8 @@ struct DrawingMeshView: View {
     @State private var anchorEntityInput: AnchorEntityInputProvider?
     
     private let syntheticDrawingEntity = ModelEntity(
-        mesh: .generateSphere(radius: 0.1),
-        materials: [SimpleMaterial(color: .white, isMetallic: true)]
+        mesh: .generateSphere(radius: 0.05),
+        materials: [SimpleMaterial(color: .green, isMetallic: true)]
     )
     
     private let rootEntity = Entity()
@@ -41,9 +41,10 @@ struct DrawingMeshView: View {
             drawingDocument = await DrawingDocument(rootEntity: rootEntity, brushState: brushState, canvas: canvas)
             
             content.add(inputEntity)
-                                
+            
+            syntheticDrawingEntity.position = SIMD3(x: 0.0, y: 1.5, z: -1.5)
             syntheticDrawingEntity.components.set(InputTargetComponent())
-            syntheticDrawingEntity.components.set(CollisionComponent(shapes: [.generateSphere(radius: 0.1)]))
+            syntheticDrawingEntity.components.set(CollisionComponent(shapes: [.generateSphere(radius: 0.05)]))
             
             content.add(syntheticDrawingEntity)
             
