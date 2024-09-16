@@ -54,77 +54,91 @@ struct DrawingCanvasConfigurationView: View {
     
     var body: some View {
         
-        VStack {
+        ZStack{
+            Color("BackgroundColor")
+                .ignoresSafeArea()
+                .opacity(0.5)
+                .blendMode(.multiply)
             
-            
-            
+            VStack {
+                
+                
+                
                 Image("LogoSetUp")
-                .resizable()
+                    .resizable()
                 
-                .frame(width: 90, height: 90)
-            
-                .padding()
-            
-            
-            
-            Text("Set up your canvas").font(.system(.title))
-            
-            
-            
-            // This `RealityView` contains no visible entities.
-            // Its purpose is to hold `placementRestPose`, so that
-            // when a person taps "Reset Placement" the app knows where to move `placementEntity` back to.
-            RealityView { content in
-                resetPose.position.x = 0.2
-                content.add(resetPose)
+                    .frame(width: 52, height: 52)
                 
-                placementResetPose = resetPose
-                settings.placementEntity.isEnabled = false
+                    .padding()
                 
-                resetPlacement()
-            } update: { content in
-                if isPlacementLockedToWindow {
-                    resetPlacement()
+                
+                VStack(spacing: 1) {
+                    Text("Set up your canvas")
+                    
+                        .font(.system(size: 20, weight: .bold))
+                    
+                    
+                    Text("Set up the space that you will use to create your masterpiece")
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .font(.system(size: 18, weight: .thin))
+                    
                 }
-            }
-            .task {
-                try? await Task.sleep(for: .seconds(0.5))
-                if isPlacementLockedToWindow {
+                
+                // This `RealityView` contains no visible entities.
+                // Its purpose is to hold `placementRestPose`, so that
+                // when a person taps "Reset Placement" the app knows where to move `placementEntity` back to.
+                RealityView { content in
+                    resetPose.position.x = 0.2
+                    content.add(resetPose)
+                    
+                    placementResetPose = resetPose
+                    settings.placementEntity.isEnabled = false
+                    
                     resetPlacement()
+                } update: { content in
+                    if isPlacementLockedToWindow {
+                        resetPlacement()
+                    }
                 }
+                .task {
+                    try? await Task.sleep(for: .seconds(0.5))
+                    if isPlacementLockedToWindow {
+                        resetPlacement()
+                    }
+                }
+                .frame(depth: 0).frame(width: 0, height: 0)
+                
+                Divider()
+                
+                VStack(spacing: 1){
+                HStack {
+                    Text("Size")
+                        .padding()
+                    Slider(value: $settings.radius, in: 0.5...2.0)
+                }
+                .padding(.top)
+                
+                
+                
+                    Button("Reset Placement") {
+                        resetPlacement()
+                    }
+                    .buttonStyle(.plain)
+                    
+                    .padding()
+                    
+                    Button("Start Drawing") {
+                        Task { await setMode(.drawing) }
+                    }
+                }
+               
+                
             }
-            .frame(depth: 0).frame(width: 0, height: 0)
-            
-            Text("Set up the space that you will use to create your masterpiece")
-                .multilineTextAlignment(.center)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .font(.system(.body))
-            
-            Divider()
-            
-            HStack {
-                Text("Size")
-                Slider(value: $settings.radius, in: 0.5...2.0)
-            }
-            .padding([.vertical])
-            
-            
-            
-            Button("Reset Placement") {
-                resetPlacement()
-            }
-            
-            
-            
-            Button("Start Drawing") {
-                Task { await setMode(.drawing) }
-            }
-            
-            
+            .padding(20)
+            .frame(width: 320, height: 380)
         }
-        .padding(10)
-        .frame(width: 300, height: 450)
     }
 }
 
