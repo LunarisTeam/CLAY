@@ -35,14 +35,13 @@ struct DashboardView: View {
             
            
             Text("LAY")
-//                ./*font(Font.custom("Quicksand", size: 100))*/
-                .font(.system(size: 100, weight: .thin, design: .rounded))
+                .fontQuicksand(.regular, 100)
                 .foregroundColor(Color.white)
                 .kerning(60)
                 .shadow(radius: 4)
                 .padding(.leading, 270)
                 .padding(.bottom, 100)
-//
+
                 
             
             Image("BgText")
@@ -52,7 +51,7 @@ struct DashboardView: View {
                 
             
             Text("Shape Art\n and your surroundings")
-                .font(.system(size: 28, weight: .thin, design: .rounded))
+                .fontQuicksand(.regular, 28)
                 .fontWeight(.light)
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
@@ -71,7 +70,8 @@ struct DashboardView: View {
                         await setMode(.chooseWorkVolume)
                     }
                 } label: {
-                    Text("Start").frame(minWidth: Self.startButtonWidth)
+                    Text("Start")
+                        .frame(minWidth: Self.startButtonWidth)
                 }
                 .glassBackgroundEffect()
                 .controlSize(.extraLarge)

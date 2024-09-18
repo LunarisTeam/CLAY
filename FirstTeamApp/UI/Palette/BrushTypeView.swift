@@ -68,21 +68,31 @@ struct SolidBrushStyleView: View {
         VStack(spacing: 20.0) {
             let colorBinding = Color.makeBinding(from: $settings.color)
             ColorPicker("Color", selection: colorBinding)
+                .fontQuicksand(.regular, 19)
             
             HStack {
                 Text("Roughness")
+                    .fontQuicksand(.regular, 19)
+                    .padding(.trailing)
+                
                 Slider(value: $settings.roughness, in: 0...1)
                     .transaction { $0.animation = nil }
             }
             
             HStack {
                 Text("Metallic")
+                    .fontQuicksand(.regular, 19)
+                    .padding(.trailing)
+                
                 Slider(value: $settings.metallic, in: 0...1)
                     .transaction { $0.animation = nil }
             }
             
             HStack {
                 Text("Thickness")
+                    .fontQuicksand(.regular, 19)
+                    .padding(.trailing)
+                
                 Slider(value: $settings.thickness, in: 0.002...0.02)
                     .transaction { $0.animation = nil }
             }
@@ -90,18 +100,27 @@ struct SolidBrushStyleView: View {
             if case .calligraphic(_, _, _) = settings.thicknessType {
                 HStack {
                     Text("Viscosity")
+                        .fontQuicksand(.regular, 19)
+                        .padding(.trailing)
+                    
                     Slider(value: $settings.thicknessType.viscosity, in: 0.05...0.95)
                         .transaction { $0.animation = nil }
                 }
                 
                 HStack {
                     Text("Speed Sensitivity")
+                        .fontQuicksand(.regular, 19)
+                        .padding(.trailing)
+                    
                     Slider(value: $settings.thicknessType.sensitivity, in: 0.5...1.0)
                         .transaction { $0.animation = nil }
                 }
                 
                 HStack {
                     Text("Speed Range")
+                        .fontQuicksand(.regular, 19)
+                        .padding(.trailing)
+                    
                     Slider(value: $settings.thicknessType.response, in: 0.5...1.0)
                         .transaction { $0.animation = nil }
                 }
@@ -116,15 +135,22 @@ struct SparkleBrushStyleView: View {
     var body: some View {
         VStack(spacing: 20.0) {
             ColorPicker("Color", selection: Color.makeBinding(from: $settings.color))
+                .fontQuicksand(.regular, 19)
             
             HStack {
                 Text("Thickness")
+                    .fontQuicksand(.regular, 19)
+                    .padding(.trailing)
+                
                 Slider(value: $settings.initialSpeed, in: 0.005...0.02)
                     .transaction { $0.animation = nil }
             }
             
             HStack {
                 Text("Particle Size")
+                    .fontQuicksand(.regular, 19)
+                    .padding(.trailing)
+                
                 Slider(value: $settings.size, in: 0.000_15...0.000_35)
                     .transaction { $0.animation = nil }
             }
