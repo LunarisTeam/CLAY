@@ -63,6 +63,7 @@
 		E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFE72C453880000624DE /* DashboardView.swift */; };
 		E3CAFFFA2C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */; };
 		E3CAFFFB2C4554AA000624DE /* SparkleBrushSimulation.metal in Sources */ = {isa = PBXBuildFile; fileRef = E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */; };
+		E3D533532C9B11F6009420BF /* FontQuicksand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D533522C9B11E7009420BF /* FontQuicksand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +118,7 @@
 		E3CAFFF62C4554AA000624DE /* SparkleBrushSimulation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SparkleBrushSimulation.metal; sourceTree = "<group>"; };
 		E3CAFFF72C4554AA000624DE /* SparkleBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkleBrushVertex.h; sourceTree = "<group>"; };
 		E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleBrushVertex+LowLevelMesh.swift"; sourceTree = "<group>"; };
+		E3D533522C9B11E7009420BF /* FontQuicksand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontQuicksand.swift; sourceTree = "<group>"; };
 		E3DDD4022C51335900803DC5 /* FirstTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				E3CAFFF42C4554AA000624DE /* MetalPacking.h */,
+				E3D533522C9B11E7009420BF /* FontQuicksand.swift */,
 				3E0317BA2C47BE74006D2E16 /* CurveProcessing.swift */,
 				3E746C592C4660230047EAFB /* MetalUtilities.swift */,
 				E3CAFFE12C453864000624DE /* MathUtilities.swift */,
@@ -435,6 +438,7 @@
 				3E53BAAE2C4FA11100EC4135 /* DrawingCanvasVisualizationView.swift in Sources */,
 				3E746C5A2C4660230047EAFB /* MetalUtilities.swift in Sources */,
 				3E53BAC82C4FAB7800EC4135 /* AnchorEntityInputProvider.swift in Sources */,
+				E3D533532C9B11F6009420BF /* FontQuicksand.swift in Sources */,
 				3E53BAC42C4FAB4F00EC4135 /* DrawingDocument.swift in Sources */,
 				3E8DBCA32C47B14E00C54F1A /* SparkleBrushCurvePoint.swift in Sources */,
 				E3CAFFEB2C453880000624DE /* DashboardView.swift in Sources */,

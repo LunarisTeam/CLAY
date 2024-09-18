@@ -8,7 +8,11 @@
 	<string>The drawing app needs floor plane tracking to detect where to place the drawing canvas.</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>project_fonts/Quicksand-Regular.ttf</string>
+		<string>Quicksand-SemiBold.ttf</string>
+		<string>Quicksand-Medium.ttf</string>
+		<string>Quicksand-Light.ttf</string>
+		<string>Quicksand-Bold.ttf</string>
+		<string>Quicksand-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -74,15 +74,14 @@ struct DrawingCanvasConfigurationView: View {
                 
                 VStack(spacing: 1) {
                     Text("Set up your canvas")
-                    
-                        .font(.system(size: 20, weight: .bold))
+                        .fontQuicksand(.bold, 19)
                     
                     
                     Text("Set up the space that you will use to create your masterpiece")
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .center)
-                        .font(.system(size: 18, weight: .thin))
+                        .fontQuicksand(.regular, 15)
                     
                 }
                 
@@ -115,7 +114,9 @@ struct DrawingCanvasConfigurationView: View {
                 VStack(spacing: 1){
                 HStack {
                     Text("Size")
+                        .fontQuicksand(.regular, 19)
                         .padding()
+                    
                     Slider(value: $settings.radius, in: 0.5...2.0)
                 }
                 .padding(.top)
@@ -126,6 +127,7 @@ struct DrawingCanvasConfigurationView: View {
                         resetPlacement()
                     }
                     .buttonStyle(.plain)
+                    
                     
                     .padding()
                     
