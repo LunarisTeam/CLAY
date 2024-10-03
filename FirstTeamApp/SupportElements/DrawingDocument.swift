@@ -90,16 +90,6 @@ class DrawingDocument {
     }
     
     @MainActor
-    func receiveSynthetic(position: SIMD3<Float>, speed: Float, chirality: Chirality) {
-        switch chirality {
-        case .left:
-            leftSource.receiveSynthetic(position: position, speed: speed, state: brushState)
-        case .right:
-            rightSource.receiveSynthetic(position: position, speed: speed, state: brushState)
-        }
-    }
-    
-    @MainActor
     func receive(input: InputData?, chirality: Chirality) {
         var input = input
         if let brushTip = input?.brushTip, !canvas.isInsideCanvas(brushTip) {

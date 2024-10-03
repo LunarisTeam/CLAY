@@ -20,11 +20,6 @@ struct DrawingMeshView: View {
     
     @State private var anchorEntityInput: AnchorEntityInputProvider?
     
-    private let syntheticDrawingEntity = ModelEntity(
-        mesh: .generateSphere(radius: 0.05),
-        materials: [SimpleMaterial(color: .green, isMetallic: true)]
-    )
-    
     private let rootEntity = Entity()
     private let inputEntity = Entity()
     
@@ -42,31 +37,7 @@ struct DrawingMeshView: View {
             
             content.add(inputEntity)
             
-            syntheticDrawingEntity.position = SIMD3(x: 0.0, y: 1.5, z: -1.5)
-            syntheticDrawingEntity.components.set(InputTargetComponent())
-            syntheticDrawingEntity.components.set(CollisionComponent(shapes: [.generateSphere(radius: 0.05)]))
-            
-            content.add(syntheticDrawingEntity)
-            
             anchorEntityInput = await AnchorEntityInputProvider(rootEntity: inputEntity, document: drawingDocument!)
         }
-        .gesture(
-            DragGesture()
-                .targetedToEntity(syntheticDrawingEntity)
-                .onChanged { value in
-                    
-                    drawingDocument?.receiveSynthetic(
-                        position: syntheticDrawingEntity.position,
-                        speed: 1.0,
-                        chirality: .right
-                    )
-                    
-                    value.entity.position = value.convert(
-                        value.location3D,
-                        from: .local,
-                        to: value.entity.parent!
-                    )
-            }
-        )
     }
 }
