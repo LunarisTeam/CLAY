@@ -86,24 +86,31 @@ struct FirstTeamAppApp: App {
             .windowResizability(.contentSize)
             
             WindowGroup(id: Self.paletteWindowId) {
-                PaletteView(brushState: $brushState)
-                    .frame(width: 900, height: 500, alignment: .center)
-                    .fixedSize(horizontal: true, vertical: false)
-                VStack {
-                    Button {
-                        Task {
-                            await setMode(.chooseWorkVolume)
+                ZStack {
+                    PaletteView(brushState: $brushState)
+                        .frame(width: 900, height: 500, alignment: .center)
+                        .fixedSize(horizontal: true, vertical: false)
+                        .overlay(alignment: .bottomTrailing) {
+                            Button {
+                                Task {
+                                    await setMode(.chooseWorkVolume)
+                                }
+                            } label: {
+                                Text("Back to canvas placement")
+                                    .font(.headline)
+                            }
+                            .background {
+                                Color("BackgroundColor")
+                                    .cornerRadius(40)
+                                    .opacity(0.5)
+                            }
+                            .environment(\.setMode, setMode)
+                            .frame(width: 300, height: 100)
+                            .padding()
+                            .blendMode(.overlay)
                         }
-                    } label: {
-                        Text("Back")
-                            .font(.extraLargeTitle)
-                    }
-                    .environment(\.setMode, setMode)
-                    .fixedSize()
-                    .padding(.top, 100)
                 }
             }
-            
             .windowResizability(.contentSize)
             
             ImmersiveSpace(id: Self.immersiveSpaceWindowId) {
