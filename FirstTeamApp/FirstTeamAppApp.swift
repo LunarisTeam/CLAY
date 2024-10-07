@@ -89,7 +89,21 @@ struct FirstTeamAppApp: App {
                 PaletteView(brushState: $brushState)
                     .frame(width: 900, height: 500, alignment: .center)
                     .fixedSize(horizontal: true, vertical: false)
+                VStack {
+                    Button {
+                        Task {
+                            await setMode(.chooseWorkVolume)
+                        }
+                    } label: {
+                        Text("Back")
+                            .font(.extraLargeTitle)
+                    }
+                    .environment(\.setMode, setMode)
+                    .fixedSize()
+                    .padding(.top, 100)
+                }
             }
+            
             .windowResizability(.contentSize)
             
             ImmersiveSpace(id: Self.immersiveSpaceWindowId) {
