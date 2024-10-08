@@ -25,25 +25,8 @@ struct PaletteView: View {
                     .opacity(0.5)
                     .blendMode(.multiply)
                 
-                VStack(alignment: .leading) {
-                    
-                    Button {
-                        print("Button tapped")
-                        Task {
-                            await setMode(.chooseWorkVolume)
-                        }
-                    } label: {
-                        Image(systemName: "chevron.left")
-                    }
-                    
-                    .padding(.horizontal, 2.5)
-                    .padding(.vertical, 5)
-                                        
-                    BrushTypeView(brushState: $brushState)
-                }
-                .environment(\.setMode, setMode)
-                .padding()
-                
+                BrushTypeView(brushState: $brushState)
+                    .padding()
             }
         }
     }

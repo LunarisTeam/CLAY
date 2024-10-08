@@ -93,6 +93,21 @@ struct FirstTeamAppApp: App {
                         .frame(width: 900, height: 500, alignment: .center)
                         .fixedSize(horizontal: true, vertical: false)
                         .environment(\.setMode, setMode)
+                        .overlay(alignment: .bottomTrailing) {
+                            Button {
+                                Task {
+                                    await setMode(.chooseWorkVolume)
+                                }
+                            } label: {
+                                HStack {
+                                    Image(systemName: "cube.transparent")
+                                    Text("Reset canvas")
+                                        .font(.headline)
+                                }
+                            }
+                            
+                            .padding(40)
+                        }
                 }
             }
             .windowResizability(.contentSize)
