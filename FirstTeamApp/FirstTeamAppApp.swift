@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct FirstTeamAppApp: App {
+    @Environment(\.scenePhase) var scenePhase
+    
     private static let paletteWindowId: String = "Palette"
     private static let configureCanvasWindowId: String = "ConfigureCanvas"
     private static let splashScreenWindowId: String = "SplashScreen"
@@ -49,7 +51,7 @@ struct FirstTeamAppApp: App {
     
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
-    
+        
     @MainActor private func setMode(_ newMode: Mode) async {
         let oldMode = mode
         guard newMode != oldMode else { return }
@@ -108,8 +110,35 @@ struct FirstTeamAppApp: App {
                     }
                 }
                 .frame(width: 0, height: 0).frame(depth: 0)
+                
+                /// This modifier allows us to know if the ImmersiveSpace is still active.
+                ///
+                /// @brief
+                ///    After pressing the Home Button the "new" value will have a nil amount, therefore we can let the rest of the app know
+                ///    by updating immersiveSpacePresented, so that any future interaction will not break the navigation flow.
+                .onImmersionChange() { _, new in
+                    if new.amount == nil {
+                        immersiveSpacePresented = false
+                    }
+                }
             }
             .immersionStyle(selection: $immersionStyle, in: .mixed)
+            
+            /// This modifier allows us to detect changes in the application scenePhase.
+            ///
+            /// @brief
+            ///    When the app gets pushed to background, we let it know that the immersive space is not presented anymore.
+            ///    If the user closes the main window, after returning from the Home Screen we can call "setMode" so that the correct
+            ///    window will be displayed again. Doing this prevents the user from breaking the application flow, which leads to an unusable product.
+            .onChange(of: scenePhase) { old, new in
+                
+                if new == .inactive || new == .background {
+                    immersiveSpacePresented = false
+                    
+                } else if new == .active {
+                    Task { await setMode(mode) }
+                }
+            }
         }
     }
 }
