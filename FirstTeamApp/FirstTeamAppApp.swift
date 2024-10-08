@@ -86,9 +86,12 @@ struct FirstTeamAppApp: App {
             .windowResizability(.contentSize)
             
             WindowGroup(id: Self.paletteWindowId) {
-                PaletteView(brushState: $brushState)
-                    .frame(width: 900, height: 500, alignment: .center)
-                    .fixedSize(horizontal: true, vertical: false)
+                ZStack {
+                    PaletteView(brushState: $brushState)
+                        .frame(width: 900, height: 500, alignment: .center)
+                        .fixedSize(horizontal: true, vertical: false)
+                        .environment(\.setMode, setMode)
+                }
             }
             .windowResizability(.contentSize)
             

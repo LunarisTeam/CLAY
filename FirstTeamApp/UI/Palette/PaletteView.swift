@@ -10,6 +10,8 @@ import RealityKit
 import RealityKitContent
 
 struct PaletteView: View {
+    
+    @Environment(\.setMode) var setMode
     @Binding var brushState: BrushState
 
     @State var isDrawing: Bool = false
@@ -23,16 +25,25 @@ struct PaletteView: View {
                     .opacity(0.5)
                     .blendMode(.multiply)
                 
-                VStack {
+                VStack(alignment: .leading) {
                     
+                    Button {
+                        print("Button tapped")
+                        Task {
+                            await setMode(.chooseWorkVolume)
+                        }
+                    } label: {
+                        Image(systemName: "chevron.left")
+                    }
                     
-                    
-                    
+                    .padding(.horizontal, 2.5)
+                    .padding(.vertical, 5)
+                                        
                     BrushTypeView(brushState: $brushState)
-                        .padding(.horizontal, 20)
-                    
                 }
-                .padding(.vertical, 20)
+                .environment(\.setMode, setMode)
+                .padding()
+                
             }
         }
     }
