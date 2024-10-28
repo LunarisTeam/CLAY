@@ -45,26 +45,32 @@ struct FirstTeamAppApp: App {
     
     @State private var immersiveSpacePresented: Bool = false
     @State private var immersionStyle: ImmersionStyle = .mixed
+    @State private var alertForDemo = !UserDefaults.standard.bool(forKey: "alert")
     
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
     
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
-        
+    
     @MainActor private func setMode(_ newMode: Mode) async {
         let oldMode = mode
-        guard newMode != oldMode else { return }
         mode = newMode
         
         if !immersiveSpacePresented && newMode.needsImmersiveSpace {
+            
             immersiveSpacePresented = true
             await openImmersiveSpace(id: Self.immersiveSpaceWindowId)
+            
         } else if immersiveSpacePresented && !newMode.needsImmersiveSpace {
+            
             immersiveSpacePresented = false
             await dismissImmersiveSpace()
+            
         }
         
+        guard newMode != oldMode else { return }
+
         openWindow(id: newMode.windowId)
         dismissWindow(id: oldMode.windowId)
     }
@@ -76,14 +82,24 @@ struct FirstTeamAppApp: App {
                     .environment(\.setMode, setMode)
                     .frame(width: 1000, height: 800)
                     .fixedSize()
+                    .alert("Welcome to CLAY!", isPresented: $alertForDemo) {
+                        Button("OK") {
+                            UserDefaults.standard.set(true, forKey: "alert")
+                            alertForDemo = false
+                        }
+                    } message: {
+                        Text("This message will only appear once.")
+                    }
             }
             .windowResizability(.contentSize)
             .windowStyle(.plain)
+            
             
             WindowGroup(id: Self.configureCanvasWindowId) {
                 DrawingCanvasConfigurationView(settings: canvas)
                     .environment(\.setMode, setMode)
                     .fixedSize()
+                
             }
             .windowResizability(.contentSize)
             
@@ -124,7 +140,6 @@ struct FirstTeamAppApp: App {
                         DrawingMeshView(canvas: canvas, brushState: $brushState)
                     }
                 }
-                .frame(width: 0, height: 0).frame(depth: 0)
                 
                 /// This modifier allows us to know if the ImmersiveSpace is still active.
                 ///
@@ -132,9 +147,7 @@ struct FirstTeamAppApp: App {
                 ///    After pressing the Home Button the "new" value will have a nil amount, therefore we can let the rest of the app know
                 ///    by updating immersiveSpacePresented, so that any future interaction will not break the navigation flow.
                 .onImmersionChange() { _, new in
-                    if new.amount == nil {
-                        immersiveSpacePresented = false
-                    }
+                    if new.amount == nil { immersiveSpacePresented = false }
                 }
             }
             .immersionStyle(selection: $immersionStyle, in: .mixed)
