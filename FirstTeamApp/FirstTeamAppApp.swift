@@ -88,7 +88,7 @@ struct FirstTeamAppApp: App {
                             alertForDemo = false
                         }
                     } message: {
-                        Text("This message will only appear once.")
+                        Text("This is a tech demo. This message will only appear once.")
                     }
             }
             .windowResizability(.contentSize)
