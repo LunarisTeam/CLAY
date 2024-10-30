@@ -88,7 +88,7 @@ struct FirstTeamAppApp: App {
                             alertForDemo = false
                         }
                     } message: {
-                        Text("This is a tech demo. This message will only appear once.")
+                        Text("⚠️ Warning ⚠️ \n Clay is a technical demo. All drawings made within the application are temporary and will be lost when you close the application or click 'Reset Canvas'.")
                     }
             }
             .windowResizability(.contentSize)
