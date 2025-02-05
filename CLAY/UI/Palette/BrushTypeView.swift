@@ -175,6 +175,7 @@ struct BrushTypeView: View {
     
     var body: some View {
         HStack(alignment: .top) {
+            
             RoundedRectangle(cornerRadius: 25)
                 .fill(.ultraThickMaterial)
                 .blendMode(.overlay)
@@ -183,9 +184,8 @@ struct BrushTypeView: View {
                         PreviewBrushView(brushState: $brushState)
                             .scaleEffect(1.5)
                             .offset(x: 22.5, y: 22.5)
-                    } else {
-                        ProgressView()
-                    }
+                        
+                    } else { ProgressView() }
                 }
                 .frame(width: 400)
 
