@@ -49,7 +49,6 @@
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
 		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
-		3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */; };
 		3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8A87B2C513BA600599BC7 /* RealityKitContent */; };
 		B43F87BA2C92E61C00A8B9EC /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B22C92E61B00A8B9EC /* Quicksand-Medium.ttf */; };
 		B43F87BB2C92E61C00A8B9EC /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B72C92E61B00A8B9EC /* Quicksand-VariableFont_wght.ttf */; };
@@ -101,7 +100,6 @@
 		3E8DBCB22C47BA7400C54F1A /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE8A87B2C513BA600599BC7 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		B43F87B02C92E61B00A8B9EC /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
@@ -121,7 +119,7 @@
 		E3CAFFF72C4554AA000624DE /* SparkleBrushVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkleBrushVertex.h; sourceTree = "<group>"; };
 		E3CAFFF82C4554AA000624DE /* SparkleBrushVertex+LowLevelMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SparkleBrushVertex+LowLevelMesh.swift"; sourceTree = "<group>"; };
 		E3D533522C9B11E7009420BF /* FontQuicksand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontQuicksand.swift; sourceTree = "<group>"; };
-		E3DDD4022C51335900803DC5 /* FirstTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDD4022C51335900803DC5 /* CLAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,11 +254,11 @@
 		3E9F18422C3C3E6200766004 = {
 			isa = PBXGroup;
 			children = (
-				3E9F184D2C3C3E6200766004 /* FirstTeamApp */,
+				3E9F184D2C3C3E6200766004 /* CLAY */,
 			);
 			sourceTree = "<group>";
 		};
-		3E9F184D2C3C3E6200766004 /* FirstTeamApp */ = {
+		3E9F184D2C3C3E6200766004 /* CLAY */ = {
 			isa = PBXGroup;
 			children = (
 				B43F87B92C92E61B00A8B9EC /* Quicksand */,
@@ -274,25 +272,16 @@
 				3E9F185A2C3C3E6300766004 /* Assets.xcassets */,
 				3E9F185F2C3C3E6300766004 /* Info.plist */,
 				3EE8A87C2C513BA600599BC7 /* Packages */,
-				3E9F185C2C3C3E6300766004 /* Preview Content */,
 				B448DD4E2CD243FF008F4A21 /* Localizable.xcstrings */,
 			);
-			path = FirstTeamApp;
-			sourceTree = "<group>";
-		};
-		3E9F185C2C3C3E6300766004 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3E9F185D2C3C3E6300766004 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = CLAY;
 			sourceTree = "<group>";
 		};
 		3EE8A87C2C513BA600599BC7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
 				3EE8A87B2C513BA600599BC7 /* RealityKitContent */,
-				E3DDD4022C51335900803DC5 /* FirstTeamApp.app */,
+				E3DDD4022C51335900803DC5 /* CLAY.app */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -344,9 +333,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E9F184A2C3C3E6200766004 /* FirstTeamApp */ = {
+		3E9F184A2C3C3E6200766004 /* CLAY */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E9F18622C3C3E6300766004 /* Build configuration list for PBXNativeTarget "FirstTeamApp" */;
+			buildConfigurationList = 3E9F18622C3C3E6300766004 /* Build configuration list for PBXNativeTarget "CLAY" */;
 			buildPhases = (
 				3E9F18472C3C3E6200766004 /* Sources */,
 				3E9F18482C3C3E6200766004 /* Frameworks */,
@@ -356,7 +345,7 @@
 			);
 			dependencies = (
 			);
-			name = FirstTeamApp;
+			name = CLAY;
 			packageProductDependencies = (
 				3E9F18502C3C3E6200766004 /* RealityKitContent */,
 				3E746C4F2C465F490047EAFB /* BitCollections */,
@@ -370,7 +359,7 @@
 				3E0317C62C47C1AF006D2E16 /* RealModule */,
 			);
 			productName = FirstTeamApp;
-			productReference = E3DDD4022C51335900803DC5 /* FirstTeamApp.app */;
+			productReference = E3DDD4022C51335900803DC5 /* CLAY.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -381,14 +370,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					3E9F184A2C3C3E6200766004 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 3E9F18462C3C3E6200766004 /* Build configuration list for PBXProject "FirstTeamApp" */;
+			buildConfigurationList = 3E9F18462C3C3E6200766004 /* Build configuration list for PBXProject "CLAY" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -407,7 +396,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E9F184A2C3C3E6200766004 /* FirstTeamApp */,
+				3E9F184A2C3C3E6200766004 /* CLAY */,
 			);
 		};
 /* End PBXProject section */
@@ -427,7 +416,6 @@
 				B43F87C02C92E61C00A8B9EC /* OFL.txt in Resources */,
 				B43F87C12C92E61C00A8B9EC /* Quicksand-Regular.ttf in Resources */,
 				3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */,
-				3E9F185E2C3C3E6300766004 /* Preview Assets.xcassets in Resources */,
 				3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +474,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -551,6 +540,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -611,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FirstTeamApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4X56JBA2R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -627,7 +617,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FirstTeamApp/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CLAY/BridgingHeader.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
@@ -641,7 +631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FirstTeamApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4X56JBA2R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -657,7 +647,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FirstTeamApp/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CLAY/BridgingHeader.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
@@ -667,7 +657,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E9F18462C3C3E6200766004 /* Build configuration list for PBXProject "FirstTeamApp" */ = {
+		3E9F18462C3C3E6200766004 /* Build configuration list for PBXProject "CLAY" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E9F18602C3C3E6300766004 /* Debug */,
@@ -676,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E9F18622C3C3E6300766004 /* Build configuration list for PBXNativeTarget "FirstTeamApp" */ = {
+		3E9F18622C3C3E6300766004 /* Build configuration list for PBXNativeTarget "CLAY" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E9F18632C3C3E6300766004 /* Debug */,
