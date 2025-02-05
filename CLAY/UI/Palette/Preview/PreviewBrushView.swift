@@ -1,6 +1,6 @@
 //
 //  PreviewBrushView.swift
-//  FirstTeamApp
+//  CLAY
 //
 //  Created by Giuseppe Rocco on 25/07/24.
 //

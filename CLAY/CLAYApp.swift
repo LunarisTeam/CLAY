@@ -1,6 +1,6 @@
 //
-//  FirstTeamAppApp.swift
-//  FirstTeamApp
+//  CLAYApp.swift
+//  CLAY
 //
 //  Created by Davide Castaldi on 08/07/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct FirstTeamAppApp: App {
+struct CLAYApp: App {
     @Environment(\.scenePhase) var scenePhase
     
     private static let paletteWindowId: String = "Palette"
@@ -172,7 +172,7 @@ struct FirstTeamAppApp: App {
 }
 
 struct SetModeKey: EnvironmentKey {
-    typealias Value = (FirstTeamAppApp.Mode) async -> Void
+    typealias Value = (CLAYApp.Mode) async -> Void
     static let defaultValue: Value = { _ in }
 }
 

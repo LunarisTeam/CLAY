@@ -1,6 +1,6 @@
 //
 //  DashboardView.swift
-//  FirstTeamApp
+//  CLAY
 //
 //  Created by Giuseppe Rocco on 15/07/24.
 //

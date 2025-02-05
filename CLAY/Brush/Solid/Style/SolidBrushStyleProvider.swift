@@ -1,6 +1,6 @@
 //
 //  SolidBrushStyleProvider.swift
-//  FirstTeamApp
+//  CLAY
 //
 //  Created by Davide Castaldi on 16/07/24.
 //

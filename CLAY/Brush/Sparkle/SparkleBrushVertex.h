@@ -1,6 +1,6 @@
 //
 //  SparkleBrushVertex.h
-//  FirstTeamApp
+//  CLAY
 //
 //  Created by Davide Castaldi on 15/07/24.
 //

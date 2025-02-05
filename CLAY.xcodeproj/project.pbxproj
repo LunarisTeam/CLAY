@@ -47,7 +47,7 @@
 		3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCAE2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift */; };
 		3E8DBCB12C47B54C00C54F1A /* CurveExtruder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */; };
 		3E9F18512C3C3E6200766004 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F18502C3C3E6200766004 /* RealityKitContent */; };
-		3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */; };
+		3E9F18532C3C3E6200766004 /* CLAYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F18522C3C3E6200766004 /* CLAYApp.swift */; };
 		3E9F185B2C3C3E6300766004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F185A2C3C3E6300766004 /* Assets.xcassets */; };
 		3EE8A87D2C513BA600599BC7 /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8A87B2C513BA600599BC7 /* RealityKitContent */; };
 		B43F87BA2C92E61C00A8B9EC /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B43F87B22C92E61B00A8B9EC /* Quicksand-Medium.ttf */; };
@@ -95,7 +95,7 @@
 		3E8DBCAE2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidDrawingMeshGenerator.swift; sourceTree = "<group>"; };
 		3E8DBCB02C47B54C00C54F1A /* CurveExtruder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveExtruder.swift; sourceTree = "<group>"; };
 		3E8DBCB22C47BA7400C54F1A /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamAppApp.swift; sourceTree = "<group>"; };
+		3E9F18522C3C3E6200766004 /* CLAYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAYApp.swift; sourceTree = "<group>"; };
 		3E9F185A2C3C3E6300766004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9F185F2C3C3E6300766004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE8A87B2C513BA600599BC7 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				E328DC8E2D53C4AE00B7D140 /* Resources */,
-				3E9F18522C3C3E6200766004 /* FirstTeamAppApp.swift */,
+				3E9F18522C3C3E6200766004 /* CLAYApp.swift */,
 				3E53BAD22C4FAC5E00EC4135 /* UI */,
 				3E53BAC92C4FAB9200EC4135 /* SupportElements */,
 				3E53BAB52C4FA95600EC4135 /* Canvas */,
@@ -441,7 +441,7 @@
 				3E0317BB2C47BE74006D2E16 /* CurveProcessing.swift in Sources */,
 				3E8DBCAF2C47B53200C54F1A /* SolidDrawingMeshGenerator.swift in Sources */,
 				3E746C4D2C465EF30047EAFB /* SparkleDrawingMeshGenerator.swift in Sources */,
-				3E9F18532C3C3E6200766004 /* FirstTeamAppApp.swift in Sources */,
+				3E9F18532C3C3E6200766004 /* CLAYApp.swift in Sources */,
 				3E53BAB42C4FA16000EC4135 /* DrawingCanvas.swift in Sources */,
 				3E8DBCA72C47B21F00C54F1A /* SparkleDrawingMeshGenerator+LowLevelMesh.swift in Sources */,
 				3E746C5D2C46660C0047EAFB /* SolidBrushCurvePoint.swift in Sources */,

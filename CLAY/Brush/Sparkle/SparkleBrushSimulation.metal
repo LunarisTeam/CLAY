@@ -1,6 +1,6 @@
 //
 //  MetalShader.metal
-//  FirstTeamApp
+//  CLAY
 //
 //  Created by Davide Castaldi on 11/07/24.
 //

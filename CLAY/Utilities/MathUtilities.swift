@@ -1,6 +1,6 @@
 //
 //  Math.swift
-//  FirstTeamApp
+//  CLAY
 //
 //  Directly from WWDC Sample Project
 //

@@ -1,6 +1,6 @@
 //
 //  CurveProcessing.swift
-//  FirstTeamApp
+//  CLAY
 //
 //  Created by Davide Castaldi on 17/07/24.
 //
