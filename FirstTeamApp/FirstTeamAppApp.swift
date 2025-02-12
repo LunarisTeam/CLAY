@@ -46,7 +46,7 @@ struct FirstTeamAppApp: App {
     @State private var immersiveSpacePresented: Bool = false
     @State private var immersionStyle: ImmersionStyle = .mixed
     @State private var alertForDemo = !UserDefaults.standard.bool(forKey: "alert")
-  
+    
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
     
@@ -70,62 +70,62 @@ struct FirstTeamAppApp: App {
         }
         
         guard newMode != oldMode else { return }
-
+        
         openWindow(id: newMode.windowId)
         dismissWindow(id: oldMode.windowId)
     }
     
     var body: some Scene {
-            WindowGroup(id: Self.splashScreenWindowId) {
-                DashboardView()
-                    .environment(\.setMode, setMode)
-                    .frame(width: 1000, height: 800)
-                    .fixedSize()
-                    .alert("Welcome to CLAY!", isPresented: $alertForDemo) {
-                        Button("OK") {
-                            UserDefaults.standard.set(true, forKey: "alert")
-                            alertForDemo = false
-                        }
-                    } message: {
-                        Text("⚠️ Warning ⚠️ \n Clay is a technical demo. All drawings made within the application are temporary and will be lost when you close the application or click 'Reset Canvas'.")
+        WindowGroup(id: Self.splashScreenWindowId) {
+            DashboardView()
+                .environment(\.setMode, setMode)
+                .frame(width: 1000, height: 800)
+                .fixedSize()
+                .alert("Welcome to CLAY!", isPresented: $alertForDemo) {
+                    Button("OK") {
+                        UserDefaults.standard.set(true, forKey: "alert")
+                        alertForDemo = false
                     }
-            }
-            .windowResizability(.contentSize)
-            .windowStyle(.plain)
+                } message: {
+                    Text("⚠️ Warning ⚠️ \n Clay is a technical demo. All drawings made within the application are temporary and will be lost when you close the application or click 'Reset Canvas'.")
+                }
+        }
+        .windowResizability(.contentSize)
+        .windowStyle(.plain)
+        
+        
+        WindowGroup(id: Self.configureCanvasWindowId) {
+            DrawingCanvasConfigurationView(settings: canvas)
+                .environment(\.setMode, setMode)
+                .fixedSize()
             
-            
-            WindowGroup(id: Self.configureCanvasWindowId) {
-                DrawingCanvasConfigurationView(settings: canvas)
+        }
+        .windowResizability(.contentSize)
+        
+        WindowGroup(id: Self.paletteWindowId) {
+            ZStack {
+                PaletteView(brushState: $brushState)
+                    .frame(width: 900, height: 500, alignment: .center)
+                    .fixedSize(horizontal: true, vertical: false)
                     .environment(\.setMode, setMode)
-                    .fixedSize()
-                
-            }
-            .windowResizability(.contentSize)
-            
-            WindowGroup(id: Self.paletteWindowId) {
-                ZStack {
-                    PaletteView(brushState: $brushState)
-                        .frame(width: 900, height: 500, alignment: .center)
-                        .fixedSize(horizontal: true, vertical: false)
-                        .environment(\.setMode, setMode)
-                        .overlay(alignment: .bottomTrailing) {
-                            Button {
-                                Task {
-                                    await setMode(.chooseWorkVolume)
-                                }
-                            } label: {
-                                HStack {
-                                    Image(systemName: "cube.transparent")
-                                    Text("Reset canvas")
-                                        .font(.headline)
-                                }
+                    .overlay(alignment: .bottomTrailing) {
+                        Button {
+                            Task {
+                                await setMode(.chooseWorkVolume)
+                            }
+                        } label: {
+                            HStack {
+                                Image(systemName: "cube.transparent")
+                                Text("Reset canvas")
+                                    .font(.headline)
                             }
                         }
-                        
-                        .padding(40)
                     }
+                
+                    .padding(40)
             }
         }
+        
         .windowResizability(.contentSize)
         
         ImmersiveSpace(id: Self.immersiveSpaceWindowId) {
@@ -138,13 +138,14 @@ struct FirstTeamAppApp: App {
                     DrawingCanvasPlacementView(settings: canvas)
                 } else if mode == .drawing {
                     DrawingMeshView(canvas: canvas, brushState: $brushState)
-                /// This modifier allows us to know if the ImmersiveSpace is still active.
-                ///
-                /// @brief
-                ///    After pressing the Home Button the "new" value will have a nil amount, therefore we can let the rest of the app know
-                ///    by updating immersiveSpacePresented, so that any future interaction will not break the navigation flow.
-                .onImmersionChange() { _, new in
-                    if new.amount == nil { immersiveSpacePresented = false }
+                    /// This modifier allows us to know if the ImmersiveSpace is still active.
+                    ///
+                    /// @brief
+                    ///    After pressing the Home Button the "new" value will have a nil amount, therefore we can let the rest of the app know
+                    ///    by updating immersiveSpacePresented, so that any future interaction will not break the navigation flow.
+                        .onImmersionChange() { _, new in
+                            if new.amount == nil { immersiveSpacePresented = false }
+                        }
                 }
             }
             .frame(width: 0, height: 0).frame(depth: 0)
