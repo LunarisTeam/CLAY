@@ -45,13 +45,14 @@ struct FirstTeamAppApp: App {
     
     @State private var immersiveSpacePresented: Bool = false
     @State private var immersionStyle: ImmersionStyle = .mixed
-    
+    @State private var alertForDemo = !UserDefaults.standard.bool(forKey: "alert")
+
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
     
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
-        
+    
     @MainActor private func setMode(_ newMode: Mode) async {
         let oldMode = mode
         guard newMode != oldMode else { return }
@@ -70,89 +71,95 @@ struct FirstTeamAppApp: App {
     }
     
     var body: some Scene {
-        Group {
-            WindowGroup(id: Self.splashScreenWindowId) {
-                DashboardView()
+        WindowGroup(id: Self.splashScreenWindowId) {
+            DashboardView()
+                .environment(\.setMode, setMode)
+                .frame(width: 1000, height: 800)
+                .fixedSize()
+                .alert("Welcome to CLAY!", isPresented: $alertForDemo) {
+                    Button("OK") {
+                        UserDefaults.standard.set(true, forKey: "alert")
+                        alertForDemo = false
+                    }
+                } message: {
+                    Text("⚠️ Warning ⚠️ \n Clay is a technical demo. All drawings made within the application are temporary and will be lost when you close the application or click 'Reset Canvas'.")
+                }
+        }
+        .windowResizability(.contentSize)
+        .windowStyle(.plain)
+        
+        WindowGroup(id: Self.configureCanvasWindowId) {
+            DrawingCanvasConfigurationView(settings: canvas)
+                .environment(\.setMode, setMode)
+                .fixedSize()
+        }
+        .windowResizability(.contentSize)
+        
+        WindowGroup(id: Self.paletteWindowId) {
+            ZStack {
+                PaletteView(brushState: $brushState)
+                    .frame(width: 900, height: 500, alignment: .center)
+                    .fixedSize(horizontal: true, vertical: false)
                     .environment(\.setMode, setMode)
-                    .frame(width: 1000, height: 800)
-                    .fixedSize()
-            }
-            .windowResizability(.contentSize)
-            .windowStyle(.plain)
-            
-            WindowGroup(id: Self.configureCanvasWindowId) {
-                DrawingCanvasConfigurationView(settings: canvas)
-                    .environment(\.setMode, setMode)
-                    .fixedSize()
-            }
-            .windowResizability(.contentSize)
-            
-            WindowGroup(id: Self.paletteWindowId) {
-                ZStack {
-                    PaletteView(brushState: $brushState)
-                        .frame(width: 900, height: 500, alignment: .center)
-                        .fixedSize(horizontal: true, vertical: false)
-                        .environment(\.setMode, setMode)
-                        .overlay(alignment: .bottomTrailing) {
-                            Button {
-                                Task {
-                                    await setMode(.chooseWorkVolume)
-                                }
-                            } label: {
-                                HStack {
-                                    Image(systemName: "cube.transparent")
-                                    Text("Reset canvas")
-                                        .font(.headline)
-                                }
+                    .overlay(alignment: .bottomTrailing) {
+                        Button {
+                            Task {
+                                await setMode(.chooseWorkVolume)
                             }
-                            
-                            .padding(40)
+                        } label: {
+                            HStack {
+                                Image(systemName: "cube.transparent")
+                                Text("Reset canvas")
+                                    .font(.headline)
+                            }
                         }
-                }
+                        
+                        .padding(40)
+                    }
             }
-            .windowResizability(.contentSize)
-            
-            ImmersiveSpace(id: Self.immersiveSpaceWindowId) {
-                ZStack {
-                    if mode == .chooseWorkVolume || mode == .drawing {
-                        DrawingCanvasVisualizationView(settings: canvas)
-                    }
-                    
-                    if mode == .chooseWorkVolume {
-                        DrawingCanvasPlacementView(settings: canvas)
-                    } else if mode == .drawing {
-                        DrawingMeshView(canvas: canvas, brushState: $brushState)
-                    }
+        }
+        .windowResizability(.contentSize)
+        
+        ImmersiveSpace(id: Self.immersiveSpaceWindowId) {
+            ZStack {
+                if mode == .chooseWorkVolume || mode == .drawing {
+                    DrawingCanvasVisualizationView(settings: canvas)
                 }
-                .frame(width: 0, height: 0).frame(depth: 0)
                 
-                /// This modifier allows us to know if the ImmersiveSpace is still active.
-                ///
-                /// @brief
-                ///    After pressing the Home Button the "new" value will have a nil amount, therefore we can let the rest of the app know
-                ///    by updating immersiveSpacePresented, so that any future interaction will not break the navigation flow.
-                .onImmersionChange() { _, new in
-                    if new.amount == nil {
-                        immersiveSpacePresented = false
-                    }
+                if mode == .chooseWorkVolume {
+                    DrawingCanvasPlacementView(settings: canvas)
+                } else if mode == .drawing {
+                    DrawingMeshView(canvas: canvas, brushState: $brushState)
                 }
             }
-            .immersionStyle(selection: $immersionStyle, in: .mixed)
+            .frame(width: 0, height: 0).frame(depth: 0)
             
-            /// This modifier allows us to detect changes in the application scenePhase.
+            /// This modifier allows us to know if the ImmersiveSpace is still active.
             ///
             /// @brief
-            ///    When the app gets pushed to background, we let it know that the immersive space is not presented anymore.
-            ///    If the user closes the main window, after returning from the Home Screen we can call "setMode" so that the correct
-            ///    window will be displayed again. Doing this prevents the user from breaking the application flow, which leads to an unusable product.
-            .onChange(of: scenePhase) { old, new in
-                
-                if new == .inactive || new == .background {
+            ///    After pressing the Home Button the "new" value will have a nil amount, therefore we can let the rest of the app know
+            ///    by updating immersiveSpacePresented, so that any future interaction will not break the navigation flow.
+            .onImmersionChange() { _, new in
+                if new.amount == nil {
                     immersiveSpacePresented = false
-                    
-                } else if new == .active {
-                    Task { await setMode(mode) }
                 }
+            }
+        }
+        .immersionStyle(selection: $immersionStyle, in: .mixed)
+        
+        /// This modifier allows us to detect changes in the application scenePhase.
+        ///
+        /// @brief
+        ///    When the app gets pushed to background, we let it know that the immersive space is not presented anymore.
+        ///    If the user closes the main window, after returning from the Home Screen we can call "setMode" so that the correct
+        ///    window will be displayed again. Doing this prevents the user from breaking the application flow, which leads to an unusable product.
+        .onChange(of: scenePhase) { old, new in
+            
+            if new == .inactive || new == .background {
+                immersiveSpacePresented = false
+                
+            } else if new == .active {
+                Task { await setMode(mode) }
             }
         }
     }
