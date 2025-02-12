@@ -5,6 +5,8 @@
 //  Created by Davide Castaldi on 23/07/24.
 //
 
+import SwiftUI
+
 enum BrushPreset: Equatable {
     case solid(settings: SolidBrushStyleProvider.Settings)
     
@@ -20,7 +22,7 @@ enum BrushType: Hashable, Equatable, CaseIterable, Identifiable {
     
     var id: Self { return self }
     
-    var label: String {
+    var label: LocalizedStringKey {
         switch self {
         case .calligraphic: return "Calligraphic"
         case .uniform: return "Uniform"
