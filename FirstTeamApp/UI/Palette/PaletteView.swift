@@ -13,21 +13,13 @@ struct PaletteView: View {
     
     @Environment(\.setMode) var setMode
     @Binding var brushState: BrushState
-
+    
     @State var isDrawing: Bool = false
     @State var isSettingsPopoverPresented: Bool = false
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color("BackgroundColor")
-                    .ignoresSafeArea()
-                    .opacity(0.5)
-                    .blendMode(.multiply)
-                
-                BrushTypeView(brushState: $brushState)
-                    .padding()
-            }
+        NavigationStack {            
+            BrushTypeView(brushState: $brushState)
         }
     }
 }

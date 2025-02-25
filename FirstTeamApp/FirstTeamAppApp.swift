@@ -104,6 +104,10 @@ struct FirstTeamAppApp: App {
         
         WindowGroup(id: Self.paletteWindowId) {
             ZStack {
+                Color("BackgroundColor")
+                    .ignoresSafeArea()
+                    .blendMode(.multiply)
+                
                 PaletteView(brushState: $brushState)
                     .frame(width: 900, height: 500, alignment: .center)
                     .fixedSize(horizontal: true, vertical: false)
@@ -121,10 +125,9 @@ struct FirstTeamAppApp: App {
                             }
                         }
                     }
-                
-                    .padding(40)
             }
         }
+        .defaultSize(width: 1000, height: 600)
         
         .windowResizability(.contentSize)
         
