@@ -110,7 +110,7 @@ struct FirstTeamAppApp: App {
                 
                 PaletteView(brushState: $brushState)
                     .frame(width: 900, height: 500, alignment: .center)
-                    .fixedSize(horizontal: true, vertical: false)
+                    .fixedSize()
                     .environment(\.setMode, setMode)
                     .overlay(alignment: .bottomTrailing) {
                         Button {
@@ -126,11 +126,11 @@ struct FirstTeamAppApp: App {
                         }
                     }
             }
+            .frame(width: 1000, height: 600)
         }
         .defaultSize(width: 1000, height: 600)
-        
         .windowResizability(.contentSize)
-        
+                
         ImmersiveSpace(id: Self.immersiveSpaceWindowId) {
             ZStack {
                 if mode == .chooseWorkVolume || mode == .drawing {
